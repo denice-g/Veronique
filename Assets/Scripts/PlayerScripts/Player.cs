@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator animator;
+    private bool gravityFlipped;
+    private float originalGravity;
+
 
     private AudioSource audioSource;
     void Start()
@@ -19,6 +22,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        originalGravity = rb.gravityScale;
     }
 
 
@@ -29,8 +33,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            float jumpDirection = gravityFlipped ? -1f : 1f;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * jumpDirection);
             PlaySFX(jumpClip);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            ToggleGravity();
         }
 
         if (moveInput > 0)
@@ -50,6 +60,25 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
+    private void ToggleGravity()
+    {
+        gravityFlipped = !gravityFlipped;
+
+        // Flip gravity (keep same magnitude)
+        rb.gravityScale = gravityFlipped ? -Mathf.Abs(originalGravity) : Mathf.Abs(originalGravity);
+
+        // Rotate the whole player 180° around Z
+        transform.Rotate(0f, 180f, 180f);
+
+        // Clear vertical speed and nudge away so you don't stick
+        Vector2 v = rb.linearVelocity;
+        v.y = 0f;
+        rb.linearVelocity = v;
+        rb.AddForce((Vector2)transform.up * 0.01f, ForceMode2D.Impulse);
+    }
+
+
+
     private void SetAnimation(float moveInput)
     {
         if (isGrounded)
@@ -65,23 +94,31 @@ public class Player : MonoBehaviour
             }
         }
 
-        else
-        {
-            if (rb.linearVelocityY > 0)
-            {
-                animator.Play("Player_Jump");
-            }
-
             else
             {
-                animator.Play("Player_Fall");
+                float vAlongUp = Vector2.Dot(rb.linearVelocity, transform.up);
+
+                if (vAlongUp > 0f)
+                {
+                    animator.Play("Player_Jump");
+                }
+                else
+                {
+                    animator.Play("Player_Fall");
+                }
             }
-        }
     }
 
     private void PlaySFX(AudioClip audioClip)
     {
         audioSource.PlayOneShot(audioClip);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }
 
