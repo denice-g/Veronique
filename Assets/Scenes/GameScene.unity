@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f24630fd8ca474bb237f46bb093e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: Veronique
+  targetSceneName: TestScene
   targetSpawnPoint: Spawn_Right
   loadDelay: 0
 --- !u!61 &1888209688
