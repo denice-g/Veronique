@@ -1,7 +1,7 @@
 // State code
 using UnityEngine;
 
-public abstratc class State {
+public abstract class State {
 
     protected GameObject npc;
     protected StateMachine stateMachine;
