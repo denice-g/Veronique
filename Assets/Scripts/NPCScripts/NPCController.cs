@@ -1,7 +1,7 @@
 // NPCController script 
 
 public class NPCController : Monobehavior {
-    private StateMachine stateMachine
+    private StateMachine stateMachine;
 
     void OnEnable(){
         stateMachine = new StateMachine();
