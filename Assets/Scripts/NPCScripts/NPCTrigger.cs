@@ -1,5 +1,4 @@
 // Trigger Initial NPC Interaction 
-
 using UnityEngine;
 
 public class NPCTrigger : MonoBehavior {
