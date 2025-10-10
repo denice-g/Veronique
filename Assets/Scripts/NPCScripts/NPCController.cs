@@ -1,6 +1,8 @@
-// NPCController script 
+// NPCController script
+using UnityEngine;
+using System.Collections; 
 
-public class NPCController : Monobehavior {
+public class NPCController : MonoBehavior {
     private StateMachine stateMachine;
 
     void OnEnable(){
