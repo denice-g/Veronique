@@ -6,8 +6,10 @@ public class HelpPlayerState : State {
 
     private NavMeshAgent agent;
     private GameObject player;
+    private string puzzleName;
 
-    public HelpPlayerState(GameObject npc, StateMachine sm) : base(npc, sm) {
+    public HelpPlayerState(GameObject npc, StateMachine sm, string puzzleName) : base(npc, sm) {
+        this.puzzleName = puzzleName;
         agent = npc.GetComponent<NavMeshAgent>();
         player = Player.Instance.gameObject;
     }
@@ -20,7 +22,7 @@ public class HelpPlayerState : State {
         Vector3 targetPos = player.transform.position + new Vector3(0, 2f, -2f);
         agent.SetDestination(targetPos);
 
-        if (PuzzleManager.Instance.IsPuzzleComplete) {
+        if (PuzzleManager.Instance.IsPuzzleComplete("Room 1")) {
             stateMachine.ChangeState(new VanishState(npc, stateMachine));
         }
     }

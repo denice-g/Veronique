@@ -6,11 +6,16 @@ public class NPCController : MonoBehaviour {
 
     void OnEnable(){
         stateMachine = new StateMachine();
-        var appear = new AppearState(gameObject, stateMachine);
+    }
+
+    public void StartWaitingState() {
+        var appear = new WaitingState(gameObject, stateMachine, "Room1");
         stateMachine.Initialize(appear);
     }
 
     void Update() {
-        stateMachine.CurrentState.LogicUpdate();
+        if (stateMachine.CurrentState != null) {
+            stateMachine.CurrentState.LogicUpdate();
+        }
     }
 }
