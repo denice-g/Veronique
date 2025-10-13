@@ -15,6 +15,16 @@ public class Player : MonoBehaviour
     private bool gravityFlipped;
     private float originalGravity;
 
+    public static Player Instance { get; private set; }
+    void Awake() {
+        if(Instance != null && Instance != this) {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+    }
+
 
     private AudioSource audioSource;
     void Start()

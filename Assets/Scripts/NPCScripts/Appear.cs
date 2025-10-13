@@ -16,7 +16,7 @@ public class AppearState : State {
     }
 
     public override void LogicUpdate() {
-        timer += Timer.deltaTime;
+        timer += Time.deltaTime;
         if(timer > appearDuration) {
             stateMachine.ChangeState(new HelpPlayerState(npc, stateMachine));
         }

@@ -9,7 +9,7 @@ public class HelpPlayerState : State {
 
     public HelpPlayerState(GameObject npc, StateMachine sm) : base(npc, sm) {
         agent = npc.GetComponent<NavMeshAgent>();
-        player = Player.Instance;
+        player = Player.Instance.gameObject;
     }
 
     public override void Enter() {
