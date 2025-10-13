@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
-    private string nextScene = "TestScene";
+    private string nextScene = "Bedroom";
 
     //Have an effect on button when hovered over
     /*private void OnMouseEnter()
