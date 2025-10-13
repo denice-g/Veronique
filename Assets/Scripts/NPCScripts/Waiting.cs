@@ -3,8 +3,10 @@ using UnityEngine;
 public class WaitingState : State {
 
     private float waitTime = 10f;
-    private float timer = 0f;
+    private float timer;
     private string puzzleName;
+
+    private SpriteRenderer laikaRenderer;
 
     public WaitingState(GameObject npc, StateMachine sm, string puzzleName) : base(npc, sm) {
         this.puzzleName = puzzleName;
@@ -14,6 +16,9 @@ public class WaitingState : State {
     public override void Enter() {
         timer = 0f;
         Debug.Log("Ghost is waiting!");
+        if(laikaRenderer != null) {
+            laikaRenderer.enabled = false;
+        }
     }
 
     public override void LogicUpdate() {

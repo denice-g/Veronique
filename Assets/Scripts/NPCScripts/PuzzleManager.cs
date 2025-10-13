@@ -28,7 +28,7 @@ public class PuzzleManager : MonoBehaviour {
             Debug.Log($"Puzzle '{puzzleName}' marked complete!");
         }
         else {
-            Debug.LogWarning($"Puzzle '{puzzleName}' not foudn in PuzzleManager!");
+            Debug.LogWarning($"Puzzle '{puzzleName}' not found in PuzzleManager!");
         }
     }
 

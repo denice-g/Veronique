@@ -23,7 +23,7 @@ public class HelpPlayerState : State {
         agent.SetDestination(targetPos);
 
         if (PuzzleManager.Instance.IsPuzzleComplete("Room 1")) {
-            stateMachine.ChangeState(new VanishState(npc, stateMachine));
+            stateMachine.ChangeState(new VanishState(npc, stateMachine, puzzleName));
         }
     }
 }
