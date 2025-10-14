@@ -6,14 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameScenes/TestScene.unity
-    guid: 11d73f6482ee5794ba837def31a791d1
+    path: Assets/Scenes/Bedroom.unity
+    guid: 8b21b9c555503bd4c8af5dc9c4466ccc
   - enabled: 1
-    path: Assets/Scenes/GameScenes/GameScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Cockpit.unity
+    guid: b4f26b7340372794baaeb07d86d1c667
+  - enabled: 1
+    path: Assets/Scenes/Hallway_To_Cockpit.unity
+    guid: c4bca0908d63ba044b0954b431246b90
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: e695ec566b94bf6469a754aef906af08
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - enabled: 1
+    path: Assets/Scenes/Puzzle_One.unity
+    guid: 91277ecc94c5d784d86da3744030c0e9
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
