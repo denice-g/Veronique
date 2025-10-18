@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        // Pause check
+        if (PauseScript.GameisPaused) return;
+
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
