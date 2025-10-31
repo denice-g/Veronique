@@ -956,8 +956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2ad137a2c8e444d8c46533f61778f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 2048523871}
-  button2: {fileID: 800760388}
+  button1: {fileID: 1133330190}
+  button2: {fileID: 1211645688}
   doorVisual: {fileID: 471960242}
 --- !u!61 &471960246
 BoxCollider2D:
@@ -1565,17 +1565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   completionSceneName: End_Screen
---- !u!114 &800760388 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 529181292425658717, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
-  m_PrefabInstance: {fileID: 1855809826}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9bd17f6b376751438fa093d6c190fae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &816934946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1834,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942441028}
   m_CullTransparentMesh: 1
+--- !u!114 &1133330190 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3224165028703033098, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+  m_PrefabInstance: {fileID: 6278693800639394919}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bd17f6b376751438fa093d6c190fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1153261303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2093,17 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &1211645688 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3224165028703033098, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+  m_PrefabInstance: {fileID: 1855809826}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bd17f6b376751438fa093d6c190fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1219958786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,22 +3078,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: button2
       objectReference: {fileID: 0}
+    - target: {fileID: 8856819756006163358, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+      propertyPath: m_Name
+      value: redButton_0_2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
---- !u!114 &2048523871 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 529181292425658717, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
-  m_PrefabInstance: {fileID: 6278693800639394919}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9bd17f6b376751438fa093d6c190fae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6278693800639394919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3134,6 +3138,22 @@ PrefabInstance:
     - target: {fileID: 5372064573828745427, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
       propertyPath: m_Name
       value: button1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500241460578591246, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500241460578591246, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500241460578591246, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856819756006163358, guid: e1780e56ed1784d4ca9457b229f217cb, type: 3}
+      propertyPath: m_Name
+      value: redButton_0_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
