@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
-public class PauseScript : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
     public static bool GameisPaused = false;
+    private static bool IsMainMenu = true;
 
     [Header("---------- MenuUIs ----------")]
+    [SerializeField] private GameObject mainMenuUI;
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject optionsMenuUI;
     [SerializeField] private GameObject audioMenuUI;
@@ -18,7 +19,7 @@ public class PauseScript : MonoBehaviour
     [SerializeField] private GameObject confirmExitButton;
 
     private string currentScene;
-    private static PauseScript instance;
+    private static MenuScript instance;
 
     private void Awake()
     {
@@ -85,6 +86,13 @@ public class PauseScript : MonoBehaviour
         }
     }
 
+    public void startGame()
+    {
+        IsMainMenu = false;
+        mainMenuUI.SetActive(false);
+        SceneManager.LoadScene("Bedroom");
+    }
+
     public void Resume()
     {
         //Close all menus
@@ -108,12 +116,21 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 0f;
         GameisPaused = true;
     }
-    
+
     //When options button is clicked
     public void Options()
     {
-        pauseMenuUI.SetActive(false);
-        optionsMenuUI.SetActive(true);
+        if (IsMainMenu)
+        {
+            mainMenuUI.SetActive(false);
+            optionsMenuUI.SetActive(true);
+        }
+        else
+        {
+            pauseMenuUI.SetActive(false);
+            optionsMenuUI.SetActive(true);
+        }
+            
     }
 
     //When audio button is clicked (in options menu)
@@ -123,14 +140,23 @@ public class PauseScript : MonoBehaviour
         audioMenuUI.SetActive(true);
     }
 
-    //When back button is clicked (if in audio menu)
+    //When back button is clicked (if in options menu)
     public void ReturnToPauseMenu()
     {
-        optionsMenuUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
+        if (IsMainMenu)
+        {
+            optionsMenuUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+        }
+        else
+        {
+            optionsMenuUI.SetActive(false);
+            pauseMenuUI.SetActive(true);
+        }
+        
     }
 
-    //When back button is clicked (if in options menu)
+    //When back button is clicked (if in audio menu)
     public void ReturnToOptionsMenu()
     {
         audioMenuUI.SetActive(false);
@@ -169,6 +195,10 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1f;
         GameisPaused = false;
         //Object.Destroy(gameObject);
+
+        //Open Main Menu
+        IsMainMenu = true;
+        mainMenuUI.SetActive(true);
         SceneManager.LoadScene("MainMenu");
     }
 

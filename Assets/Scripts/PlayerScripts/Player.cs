@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         // Pause check
-        if (PauseScript.GameisPaused) return;
+        if (MenuScript.GameisPaused) return;
 
         // Sample raw input in Update
         moveInputRaw = Input.GetAxisRaw("Horizontal"); // -1, 0, or 1 for keyboard
