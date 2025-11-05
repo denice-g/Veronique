@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private bool isGrounded;
+    private bool onYellowPlatform = false;
     private Animator animator;
     private bool gravityFlipped;
     private float originalGravity;
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
             audioManager.playerSFX(audioManager.jump);
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && isGrounded && !onYellowPlatform)
         {
             ToggleGravity();
         }
@@ -133,5 +134,21 @@ public class Player : MonoBehaviour
         if (groundCheck == null) return;
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("YellowPlatform"))
+        {
+            onYellowPlatform = true; // Disable jumping when on a "NoJumpPlatform"
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("YellowPlatform"))
+        {
+            onYellowPlatform = false; // Re-enable jumping when leaving a "NoJumpPlatform"
+        }
     }
 }
