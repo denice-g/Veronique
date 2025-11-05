@@ -8,8 +8,6 @@ public class Player : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
-    public AudioClip jumpClip;
-
     // Optional: assign in Inspector (Physics Material 2D with 0 friction)
     public PhysicsMaterial2D zeroFrictionMaterial;
 
@@ -21,14 +19,20 @@ public class Player : MonoBehaviour
     private float originalGravity;
     private float moveInputRaw; // store input sampled in Update
 
-    private AudioSource audioSource;
+    //Audio manager for player sounds
+    private AudioManager audioManager;
+
+    //To get access to audioManager
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
         originalGravity = rb.gravityScale;
 
         // Recommended runtime safety: ensure no friction
@@ -44,7 +48,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         // Pause check
-        if (PauseScript.GameisPaused) return;
+        if (MenuScript.GameisPaused) return;
 
         // Sample raw input in Update
         moveInputRaw = Input.GetAxisRaw("Horizontal"); // -1, 0, or 1 for keyboard
@@ -57,7 +61,9 @@ public class Player : MonoBehaviour
             float dir = gravityFlipped ? -1f : 1f;
             // Apply jump in FixedUpdate-style way: set vertical velocity once
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * dir);
-            PlaySFX(jumpClip);
+
+            //Play jump SFX
+            audioManager.playerSFX(audioManager.jump);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -120,11 +126,6 @@ public class Player : MonoBehaviour
             if (vAlongUp > 0f) animator.Play("Player_Jump");
             else animator.Play("Player_Fall");
         }
-    }
-
-    private void PlaySFX(AudioClip clip)
-    {
-        if (clip) audioSource.PlayOneShot(clip);
     }
 
     private void OnDrawGizmosSelected()
