@@ -26,6 +26,8 @@ public class ShipCrisisController : MonoBehaviour
     public bool InCrisis { get; private set; }
     public float TimeLeft { get; private set; }
 
+    private AudioManager audioManager;
+
     void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
@@ -33,6 +35,11 @@ public class ShipCrisisController : MonoBehaviour
          DontDestroyOnLoad(gameObject); // Uncomment if you want this to persist across scenes
         HideTimerUI();
         if (endScreenPanel) endScreenPanel.SetActive(false);
+    }
+
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -56,6 +63,9 @@ public class ShipCrisisController : MonoBehaviour
         TimeLeft = crisisDuration;
         ShowTimerUI();
         UpdateTimerLabel(TimeLeft);
+
+        audioManager.PlayMusic(audioManager.gameStartMusic);
+
         // TODO: Trigger VFX/SFX/alarms/ship “broken” state here
     }
 
