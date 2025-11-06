@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ghost NPC
+  - Audio
+  - YellowPlatform
   layers:
   - Default
   - TransparentFX
@@ -44,6 +46,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UIMenu
+    uniqueID: 4294058843
     locked: 0
   m_RenderingLayers:
   - Default
