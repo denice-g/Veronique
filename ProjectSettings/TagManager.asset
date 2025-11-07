@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Audio
   - YellowPlatform
+  - WireBox
   layers:
   - Default
   - TransparentFX
