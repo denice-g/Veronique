@@ -11,6 +11,8 @@ public class EndGameController : MonoBehaviour
     [Tooltip("Scene name for the main menu (for the Quit button).")]
     public string mainMenuSceneName = "MainMenu"; // change this to your actual menu scene
 
+    [SerializeField] private GameObject gameOverUI;
+
     // Called by the Retry button
     public void Retry()
     {
@@ -29,6 +31,7 @@ public class EndGameController : MonoBehaviour
     public void QuitToMenu()
     {
         Time.timeScale = 1f;
+        gameOverUI.SetActive(false);
         SceneManager.LoadScene(mainMenuSceneName);
     }
 }
