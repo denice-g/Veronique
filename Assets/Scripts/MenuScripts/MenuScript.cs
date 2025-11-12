@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
@@ -13,13 +14,25 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject optionsMenuUI;
     [SerializeField] private GameObject audioMenuUI;
     [SerializeField] private GameObject confirmMenuUI;
+    [SerializeField] private GameObject timerUI;
+    [SerializeField] private GameObject gameOverUI;
 
     [Header("---------- Buttons ----------")]
     [SerializeField] private GameObject confirmQuitButton;
     [SerializeField] private GameObject confirmExitButton;
 
+    private float crisisDuration = 60f;
+    public float TimeLeft;
+
+    [Header("---------- Triggers ----------")]
+    public bool InCrisis = false;
+    public bool isGameOver = false;
+
+    [Header("---------- Text ----------")]
+    [SerializeField] private TextMeshProUGUI timerLabel;
+
     private string currentScene;
-    private static MenuScript instance;
+    public static MenuScript instance;
 
     private void Awake()
     {
@@ -75,18 +88,37 @@ public class MenuScript : MonoBehaviour
         //Pause/Resume game everytime escape is clicked
         if (Input.GetKeyDown(KeyCode.Escape) && currentScene != "MainMenu")
         {
-            if(GameisPaused)
+            if (GameisPaused)
             {
+                //Makes it unable to pause when game over
+                if (isGameOver) return;
+
                 Resume();
             }
             else
             {
+                //Makes it unable to resume when game over
+                if (isGameOver) return;
+
                 Pause();
             }
         }
+        
+        if(InCrisis)
+        {
+            TimeLeft -= Time.deltaTime;
+            UpdateTimerLabel(TimeLeft);
+        }
+
+        if (TimeLeft <= 0f)
+        {
+            if (isGameOver) return;
+            TimeLeft = 0f;
+            GameOver();
+        }
     }
 
-    public void startGame()
+    public void StartGame()
     {
         IsMainMenu = false;
         mainMenuUI.SetActive(false);
@@ -110,7 +142,7 @@ public class MenuScript : MonoBehaviour
         GameisPaused = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
@@ -167,6 +199,7 @@ public class MenuScript : MonoBehaviour
     public void QuitToMenu()
     {
         pauseMenuUI.SetActive(false);
+        gameOverUI.SetActive(false);
         confirmMenuUI.SetActive(true);
         confirmQuitButton.SetActive(true);
     }
@@ -175,6 +208,7 @@ public class MenuScript : MonoBehaviour
     public void ExitGame()
     {
         pauseMenuUI.SetActive(false);
+        gameOverUI.SetActive(false);
         confirmMenuUI.SetActive(true);
         confirmExitButton.SetActive(true);
     }
@@ -187,14 +221,19 @@ public class MenuScript : MonoBehaviour
         optionsMenuUI.SetActive(false);
         audioMenuUI.SetActive(false);
         confirmMenuUI.SetActive(false);
+        timerUI.SetActive(false);
+        gameOverUI.SetActive(false);
         confirmQuitButton.SetActive(false);
         confirmExitButton.SetActive(false);
 
-
-
+        //Unpause and set game events false
         Time.timeScale = 1f;
         GameisPaused = false;
-        //Object.Destroy(gameObject);
+        InCrisis = false;
+        isGameOver = false;
+        
+        //Reset timer
+        TimeLeft = crisisDuration;
 
         //Open Main Menu
         IsMainMenu = true;
@@ -216,11 +255,55 @@ public class MenuScript : MonoBehaviour
     //If no is clicked
     public void No()
     {
-        confirmMenuUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
+
+        if (isGameOver)
+        {
+            confirmMenuUI.SetActive(false);
+            gameOverUI.SetActive(true);
+        }
+        else if(IsMainMenu)
+        {
+            confirmMenuUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+        }
+        else
+        {
+            confirmMenuUI.SetActive(false);
+            pauseMenuUI.SetActive(true);
+        }
 
         //Deactivate both confirm buttons
         confirmQuitButton.SetActive(false);
         confirmExitButton.SetActive(false);
+    }
+
+    public void TriggerCrisis()
+    {
+        CanvasGroup group = timerUI.GetComponent<CanvasGroup>();
+        group.interactable = false;
+        group.blocksRaycasts = false;
+
+        if (InCrisis) return; // already running
+        InCrisis = true;
+        TimeLeft = crisisDuration;
+        timerUI.SetActive(true);
+        UpdateTimerLabel(TimeLeft);
+    }
+    
+    void UpdateTimerLabel(float seconds)
+    {
+        if (!timerLabel) return;
+        int s = Mathf.Max(0, Mathf.CeilToInt(seconds));
+        int m = s / 60;
+        int sec = s % 60;
+        timerLabel.text = $"{m:0}:{sec:00}";
+    }
+    
+    private void GameOver()
+    {
+        isGameOver = true;
+        InCrisis = false;
+        Time.timeScale = 0f;
+        gameOverUI.SetActive(true);
     }
 }
