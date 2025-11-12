@@ -17,7 +17,7 @@ TagManager:
   - UI
   - Ground
   - Background
-  - 
+  - window
   - 
   - 
   - 
@@ -42,14 +42,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3441371575
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3441371575
+    locked: 0
   - name: UIMenu
     uniqueID: 4294058843
+    locked: 0
+  - name: window
+    uniqueID: 4098756569
     locked: 0
   m_RenderingLayers:
   - Default
