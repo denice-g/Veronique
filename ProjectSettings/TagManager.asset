@@ -12,7 +12,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - pop-up
   - Water
   - UI
   - Ground
@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: pop-up
+    uniqueID: 2539042337
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
