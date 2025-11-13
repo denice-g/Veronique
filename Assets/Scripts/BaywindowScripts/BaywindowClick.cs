@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class BaywindowClick : MonoBehaviour
 {
@@ -6,8 +8,7 @@ public class BaywindowClick : MonoBehaviour
     public GameObject bigWindow;
 
     bool _playerInRange;
-
-    bool _bigWindowOpen = false;
+     bool _bigWindowOpen = false;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class BaywindowClick : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
+            Console.Write("here");
             _playerInRange = true;
         }
     }
@@ -29,6 +31,7 @@ public class BaywindowClick : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
+            Console.Write("here2");
             _playerInRange = false;
         }
     }

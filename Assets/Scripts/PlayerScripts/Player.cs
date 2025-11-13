@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private float originalGravity;
     private float moveInputRaw; // store input sampled in Update
 
-    public static Player Instance;
+     public static Player Instance;
 
     //Audio manager for player sounds
     private AudioManager audioManager;
