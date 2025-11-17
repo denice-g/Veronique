@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Ladder
-  - LadderTop
+  - Audio
+  - YellowPlatform
+  - WireBox
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - UI
   - Ground
   - Background
-  - Ladder
-  - OneWayPlatform
-  - GlowFX
-  - EnvironmentDark
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -43,14 +44,11 @@ TagManager:
   - name: Background
     uniqueID: 3441371575
     locked: 0
-  - name: GlowFX
-    uniqueID: 2742640489
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: EnvironmentDark
-    uniqueID: 1114740877
+  - name: UIMenu
+    uniqueID: 4294058843
     locked: 0
   m_RenderingLayers:
   - Default
