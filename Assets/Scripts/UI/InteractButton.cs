@@ -40,7 +40,7 @@ public class InteractButton : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ShipCrisisController.Instance?.TriggerCrisis();
+            MenuScript.instance?.TriggerCrisis();
             _used = true;
             if (interactPrompt) interactPrompt.SetActive(false);
         }

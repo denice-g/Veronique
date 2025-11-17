@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private bool isGrounded;
+    private bool onYellowPlatform = false;
     private Animator animator;
     private bool gravityFlipped;
     private float originalGravity;
@@ -46,14 +47,20 @@ public class Player : MonoBehaviour
 
 private Coroutine dropRoutine;
 
-    private AudioSource audioSource;
+    //Audio manager for player sounds
+    private AudioManager audioManager;
+
+    //To get access to audioManager
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
         originalGravity = rb.gravityScale;
 
         if (col && zeroFrictionMaterial != null)
@@ -88,7 +95,9 @@ private Coroutine dropRoutine;
         {
             float dir = gravityFlipped ? -1f : 1f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * dir);
-            PlaySFX(jumpClip);
+
+            //Play jump SFX
+            audioManager.playerSFX(audioManager.jump);
         }
 
         // --- Gravity flip (disabled while climbing) ---
@@ -279,5 +288,21 @@ private Coroutine dropRoutine;
         // visualize ladder overlap radius
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, ladderCheckRadius);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("YellowPlatform"))
+        {
+            onYellowPlatform = true; // Disable jumping when on a "NoJumpPlatform"
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("YellowPlatform"))
+        {
+            onYellowPlatform = false; // Re-enable jumping when leaving a "NoJumpPlatform"
+        }
     }
 }
