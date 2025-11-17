@@ -234,30 +234,6 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: meowClips.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: 'meowClips.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: d782b10e645d3cb47b152ce377782143, type: 3}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: 'meowClips.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: d649762f190279c45a6a82f48327b234, type: 3}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: 'meowClips.Array.data[2]'
-      value: 
-      objectReference: {fileID: 8300000, guid: ad3ca2ee78485c34f88492fa040aa82f, type: 3}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: 'meowClips.Array.data[3]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 03a31148ce12e9c4f955bb13425682db, type: 3}
-    - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
-      propertyPath: 'meowClips.Array.data[4]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 646b44db2c7e36444809b83bf2f39a9b, type: 3}
     - target: {fileID: 4517648701843989172, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1747,7 +1723,6 @@ GameObject:
   - component: {fileID: 2118380532}
   - component: {fileID: 2118380531}
   - component: {fileID: 2118380534}
-  - component: {fileID: 2118380535}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -1852,23 +1827,6 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
---- !u!114 &2118380535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118380530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NoiseProfile: {fileID: 0}
-  PivotOffset: {x: 0, y: 0, z: 0}
-  AmplitudeGain: 1
-  FrequencyGain: 1
-  m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &2143062903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,12 +1995,11 @@ SceneRoots:
   - {fileID: 2118380533}
   - {fileID: 2102780210}
   - {fileID: 1466799363}
-  - {fileID: 139521640}
   - {fileID: 1091926789}
   - {fileID: 670712783}
-  - {fileID: 37377395}
   - {fileID: 905102528}
   - {fileID: 461054577}
+  - {fileID: 1693721936}
   - {fileID: 389158184}
   - {fileID: 2143062906}
   - {fileID: 37377395}
