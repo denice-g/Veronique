@@ -21,7 +21,7 @@ public class ComputerScreenUI : MonoBehaviour
     public GameObject puzzleCompleteScreenOff;
 
     public GameObject SceneSwap;
-
+    public MonoBehaviour playerMoveScript;
 
     bool _playerInRange;
     bool _ScreenActive;
@@ -64,9 +64,17 @@ public class ComputerScreenUI : MonoBehaviour
             _ScreenActive = !_ScreenActive;
             computerScreenUI.SetActive(_ScreenActive);
 
-            if (!_ScreenActive)
-                ClearInput();
+            if(_ScreenActive){
+                if(playerMoveScript != null)
+                    playerMoveScript.enabled = false;
+                }
+            else //screen not active
+            {
+                if(playerMoveScript != null)
+                    playerMoveScript.enabled = true;
 
+                ClearInput();
+            }
         }
 
     }
@@ -113,6 +121,8 @@ public class ComputerScreenUI : MonoBehaviour
             _puzzleCompleted = true;
             _ScreenActive = false;
             computerScreenUI.SetActive(false);
+
+            if(playerMoveScript != null) playerMoveScript.enabled = true;
 
             if (puzzleCompleteLight != null) puzzleCompleteLight.SetActive(true);
 
