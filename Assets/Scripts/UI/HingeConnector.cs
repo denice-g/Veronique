@@ -1,31 +1,30 @@
 using UnityEngine;
 
-public class WireBox : MonoBehaviour, IWireConnectable
+public class HingeConnector : MonoBehaviour, IWireConnectable
 {
-    // Optional explicit connection point. If null, we fall back to the SpriteRenderer's bounds
-    // center (if present) or the object's transform.position.
     public Transform connectionPoint;
-    private Transform playerTransform;
+    public Transform playerTransform;
+    public WireBox connectedWireBox;
+    public IWireConnectable previousConnectable;
+    public bool isEndpoint = false;
     private SpriteRenderer cachedSprite;
     private bool playerInRange = false;
-    public string color = "green"; // default color
     public bool isConnected = false;
 
+    // on trigger, if 'E' is pressed, connect wire
     private void Update()
     {
-        if(isConnected)
-            return;
-
+        // Can only connect, not start a wire from here
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            // Start wire if not dragging, or connect endpoint if dragging
             if (WireManager.Instance.isDragging)
             {
+                if(isConnected)
+                    return;
                 WireManager.Instance.ConnectEndpoint(this);
-            }
-            else
+            } else if(connectedWireBox != null && !connectedWireBox.isConnected && isEndpoint)
             {
-                WireManager.Instance.StartWire(this, this, playerTransform);
+                WireManager.Instance.StartWire(this, connectedWireBox, playerTransform);
             }
         }
     }
