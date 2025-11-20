@@ -6,6 +6,8 @@ public class InteractCalander : MonoBehaviour
     public string playerTag = "Player";
     public GameObject calander;
 
+    public MonoBehaviour playerMoveScript;
+
     bool _playerInRange;
     bool _calandarOpen = false;
 
@@ -27,7 +29,6 @@ public class InteractCalander : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             _playerInRange = false;
-            //if (calander) calander.SetActive(true);
         }
 
     }
@@ -41,11 +42,20 @@ public class InteractCalander : MonoBehaviour
             {
                 calander.SetActive(true);
                 _calandarOpen = true;
+
+                if (playerMoveScript != null)
+                    playerMoveScript.enabled = false; //freezing the player
+
+
             }
             else if (_calandarOpen)
             {
                 calander.SetActive(false);
                 _calandarOpen = false;
+
+                if (playerMoveScript != null)
+                    playerMoveScript.enabled = true;
+
             }
         }
 
