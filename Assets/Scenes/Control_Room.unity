@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 57786087}
   - component: {fileID: 57786088}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,18 +192,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 1, g: 0.59169227, b: 0, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 1, g: 0.66467065, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &85965983
@@ -261,7 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 106162768}
   - component: {fileID: 106162769}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,54 +324,20 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 0, g: 0.18431373, b: 1, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 0, g: 0.49803922, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &160073468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 832338257}
-  m_Color: {r: 0.79127276, g: 0.37548557, b: 0.46292877, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &172305323
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 172305324}
   - component: {fileID: 172305325}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,10 +411,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 0.49019608, g: 1, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -456,43 +422,9 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &206128189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1053751637}
-  m_Color: {r: 0.82604575, g: 0.49185973, b: 0.55470717, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &224730067
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287387758}
   - component: {fileID: 287387759}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,18 +668,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 1, g: 0.59169227, b: 0, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 1, g: 0.66265064, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &293409731
@@ -783,15 +715,11 @@ MonoBehaviour:
   id: RED
   rank: 5
   manager: {fileID: 2047284921}
-  renderers:
-  - {fileID: 293409733}
-  - {fileID: 716894604}
-  - {fileID: 914945170}
-  - {fileID: 986329414}
   layerAlphaMul:
   - 1
   - 0.32
   - 0.12
+  brightnessMultiplier: 0.38
   pulseAmount: 0.08
   pulseSpeed: 3
 --- !u!212 &293409733
@@ -838,12 +766,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0.19601297, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -872,40 +800,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8710212419978036614, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
   m_PrefabInstance: {fileID: 780386152}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &345532739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1954249407}
-  m_Color: {r: 0.7034281, g: 0.45474073, b: 0.5321229, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &414516286
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,8 +842,6 @@ MonoBehaviour:
   sfx: {fileID: 0}
   solvedJingle: {fileID: 0}
   wrongSequenceJingle: {fileID: 0}
-  expectedOrder: []
-  enteredOrder: []
   solved: 0
 --- !u!4 &414516288
 Transform:
@@ -976,7 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438055554}
   - component: {fileID: 438055555}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +884,7 @@ Transform:
   m_GameObject: {fileID: 438055553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.050001144, y: 0, z: 0}
+  m_LocalPosition: {x: 0.050001144, y: -0.256, z: 0}
   m_LocalScale: {x: 1.3500092, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1039,10 +931,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0.9607843, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -1050,7 +942,7 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &475347604
@@ -1111,7 +1003,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.75, y: 1.56}
-    newSize: {x: 0.73, y: 2.26}
+    newSize: {x: 0.75, y: 1.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1167,10 +1059,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.73, y: 2.26}
+  m_Size: {x: 0.75, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &475347608
@@ -1210,9 +1102,6 @@ MonoBehaviour:
   flipOk: {fileID: 0}
   flipWrong: {fileID: 0}
   manager: {fileID: 0}
-  sr: {fileID: 0}
-  playerInside: 0
-  isOn: 0
 --- !u!1 &477378344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,16 +1136,13 @@ MonoBehaviour:
   id: GREEN
   playerTag: Player
   interactKey: 101
-  offSprite: {fileID: 4472132391939718853, guid: 7d8f2279a7ec26d498fc16e2003d0b19, type: 3}
-  onSprite: {fileID: 8548431559956157535, guid: f973b6ecb56b82b4aaf9e8ec977248ed, type: 3}
+  offSprite: {fileID: 5245691968189729357, guid: 6d98611edc3722b40a5066f135f377f6, type: 3}
+  onSprite: {fileID: 2467587915701245844, guid: e73e4606e9411f540920836b9e240f5a, type: 3}
   promptUI: {fileID: 0}
   sfx: {fileID: 0}
   flipOk: {fileID: 0}
   flipWrong: {fileID: 0}
   manager: {fileID: 0}
-  sr: {fileID: 0}
-  playerInside: 0
-  isOn: 0
 --- !u!61 &477378347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1347,7 +1233,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4472132391939718853, guid: 7d8f2279a7ec26d498fc16e2003d0b19, type: 3}
+  m_Sprite: {fileID: 5245691968189729357, guid: 6d98611edc3722b40a5066f135f377f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1355,7 +1241,7 @@ SpriteRenderer:
   m_Size: {x: 0.75, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &477378349
@@ -1778,7 +1664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572586313}
   - component: {fileID: 572586314}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,10 +1727,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 0.49019608, g: 1, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -1852,7 +1738,7 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &583331094
@@ -1903,16 +1789,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: ORANGE
-  rank: 0
+  rank: 3
   manager: {fileID: 2047284921}
-  renderers:
-  - {fileID: 950766270}
-  - {fileID: 287387759}
-  - {fileID: 57786088}
   layerAlphaMul:
   - 1
   - 0.32
   - 0.12
+  brightnessMultiplier: 1.04
   pulseAmount: 0.08
   pulseSpeed: 3
 --- !u!1 &625326793
@@ -1949,16 +1832,13 @@ MonoBehaviour:
   id: ORANGE
   playerTag: Player
   interactKey: 101
-  offSprite: {fileID: -2822988435047655982, guid: 0e172678e52068f4d99f01111ffaa36f, type: 3}
-  onSprite: {fileID: 3727272004384913048, guid: fefacf56ee32a5a488fb62e3b158f61c, type: 3}
+  offSprite: {fileID: 910331161048602713, guid: 7204afdfac06ecb468af1c45e3c355cf, type: 3}
+  onSprite: {fileID: -3730343095364707592, guid: 25f17179974f76d4b89e071405474dd2, type: 3}
   promptUI: {fileID: 0}
   sfx: {fileID: 0}
   flipOk: {fileID: 0}
   flipWrong: {fileID: 0}
   manager: {fileID: 0}
-  sr: {fileID: 0}
-  playerInside: 0
-  isOn: 0
 --- !u!61 &625326796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2049,7 +1929,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2822988435047655982, guid: 0e172678e52068f4d99f01111ffaa36f, type: 3}
+  m_Sprite: {fileID: 910331161048602713, guid: 7204afdfac06ecb468af1c45e3c355cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2057,7 +1937,7 @@ SpriteRenderer:
   m_Size: {x: 0.75, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &625326798
@@ -2086,7 +1966,7 @@ GameObject:
   - component: {fileID: 702288300}
   - component: {fileID: 702288302}
   - component: {fileID: 702288301}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: LadderTopZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2102,7 +1982,7 @@ Transform:
   m_GameObject: {fileID: 702288299}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.76, z: 0}
+  m_LocalPosition: {x: 0, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2161,7 +2041,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.013791084, y: 0.4641375}
+  m_Offset: {x: 0.018802285, y: 0.4641375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2171,7 +2051,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0312319, y: 0.07172501}
+  m_Size: {x: 7.7023716, y: 0.07172501}
   m_EdgeRadius: 0
 --- !u!1 &716894602
 GameObject:
@@ -2183,7 +2063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716894603}
   - component: {fileID: 716894604}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2246,18 +2126,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0, b: 0.19607843, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &718022335
@@ -2294,16 +2174,13 @@ MonoBehaviour:
   id: YELLOW
   playerTag: Player
   interactKey: 101
-  offSprite: {fileID: 9078397990311959772, guid: 02b2209abebd36e4bbb6fa3437d72f19, type: 3}
-  onSprite: {fileID: -4756135201135319833, guid: 045e985107592804f917229c082fc26b, type: 3}
+  offSprite: {fileID: -5402397032690402172, guid: fbe71856c037eb243807809562ce900f, type: 3}
+  onSprite: {fileID: 6129152409153900085, guid: 546f23d1b87655440a1b46a2a0fb7f0a, type: 3}
   promptUI: {fileID: 0}
   sfx: {fileID: 0}
   flipOk: {fileID: 0}
   flipWrong: {fileID: 0}
   manager: {fileID: 0}
-  sr: {fileID: 0}
-  playerInside: 0
-  isOn: 0
 --- !u!61 &718022338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2394,7 +2271,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9078397990311959772, guid: 02b2209abebd36e4bbb6fa3437d72f19, type: 3}
+  m_Sprite: {fileID: -5402397032690402172, guid: fbe71856c037eb243807809562ce900f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2402,7 +2279,7 @@ SpriteRenderer:
   m_Size: {x: 0.75, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &718022340
@@ -2430,15 +2307,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
       propertyPath: groundLayer.m_Bits
-      value: 576
+      value: 1088
       objectReference: {fileID: 0}
     - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
       propertyPath: whatIsLadder.m_Bits
-      value: 256
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 2324490400318319734, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
       propertyPath: oneWayPlatformMask.m_Bits
-      value: 512
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 3148274284071305927, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
       propertyPath: m_SortingOrder
@@ -2497,217 +2374,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1fd0ba9b519c704db057c265eac0157, type: 3}
---- !u!213 &832338257
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &906980459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,217 +2452,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!213 &913931938
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &914945168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +2462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914945169}
   - component: {fileID: 914945170}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3070,10 +2525,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 6
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0, b: 0.19607843, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -3081,43 +2536,9 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &937817490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1201781704}
-  m_Color: {r: 0.9092536, g: 0.443827, b: 0.55490476, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &942926328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,15 +2572,11 @@ MonoBehaviour:
   id: BLUE
   rank: 4
   manager: {fileID: 2047284921}
-  renderers:
-  - {fileID: 942926330}
-  - {fileID: 1997451875}
-  - {fileID: 106162769}
-  - {fileID: 1836627639}
   layerAlphaMul:
   - 1
   - 0.32
   - 0.12
+  brightnessMultiplier: 1.71
   pulseAmount: 0.08
   pulseSpeed: 3
 --- !u!212 &942926330
@@ -3206,12 +2623,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 0, g: 0.18400002, b: 1, a: 0}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 0, g: 0.49777555, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.63, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -3245,7 +2662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950766269}
   - component: {fileID: 950766270}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3308,18 +2725,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 1, g: 0.59169227, b: 0, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 1, g: 0.66265064, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &958881405
@@ -3332,7 +2749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958881406}
   - component: {fileID: 958881407}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3395,10 +2812,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0.9607843, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -3406,7 +2823,7 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &986329412
@@ -3419,7 +2836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986329413}
   - component: {fileID: 986329414}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3482,10 +2899,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0, b: 0.19607843, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -3493,7 +2910,7 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1001946833
@@ -3506,7 +2923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001946834}
   - component: {fileID: 1001946835}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3569,18 +2986,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 0.49019608, g: 1, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1048874274
@@ -3699,217 +3116,6 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
---- !u!213 &1053751637
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &1062429235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,7 +3126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062429236}
   - component: {fileID: 1062429237}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3983,231 +3189,20 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 1, g: 0.9607843, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!213 &1201781704
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &1237019925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,7 +3214,7 @@ GameObject:
   - component: {fileID: 1237019928}
   - component: {fileID: 1237019927}
   - component: {fileID: 1237019926}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4260,17 +3255,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03986752, y: 0.38796592}
+  m_Offset: {x: 0.1649394, y: -0.07285261}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.97, y: 4.95}
-    newSize: {x: 4.97, y: 4.95}
+    oldSize: {x: 7.71, y: 10.11}
+    newSize: {x: 7.71, y: 10.11}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0995386, y: 4.066609}
+  m_Size: {x: 8.243788, y: 10.313262}
   m_EdgeRadius: 0
 --- !u!212 &1237019927
 SpriteRenderer:
@@ -4314,17 +3309,17 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -1
+  m_SortingLayer: -3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8297077122797660270, guid: 8371da3144df94841b9cfbb7e15d389e, type: 3}
+  m_Sprite: {fileID: 5266067843512441219, guid: 192c82f447e099d4e9091590b0b77314, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.97, y: 4.95}
+  m_Size: {x: 7.71, y: 10.11}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1237019928
@@ -4336,9 +3331,9 @@ Transform:
   m_GameObject: {fileID: 1237019925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.94, y: 2.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.94, y: -0.23864818, z: 0}
+  m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 702288300}
   m_Father: {fileID: 0}
@@ -4503,40 +3498,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1971941749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1361675650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1825198956}
-  m_Color: {r: 0.97975206, g: 0.67223, b: 0.7060166, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &1367835035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,10 +3573,10 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -1
+  m_SortingLayer: -3
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.82000005, y: 6.035, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -4634,242 +3595,244 @@ Tilemap:
   - first: {x: -2, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 4, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 6, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 8, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 10, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 12, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 13, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 15, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 16, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 2
       m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 4
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 18, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 19, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 21, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 22, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 4
       m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 6
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 24, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 26, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 28, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 30, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 32, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   - first: {x: 34, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileIndex: 6
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741827
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 345532739}
+    m_Data: {fileID: 11400000, guid: 167a551557e00d944b184e8ce0b5ec83, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 206128189}
+    m_Data: {fileID: 11400000, guid: 910dcfa1ad6feb8439ac96160f584367, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 1361675650}
+    m_Data: {fileID: 11400000, guid: ba4637c4885474c43979c01291c4d5af, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 2124985962}
+    m_Data: {fileID: 11400000, guid: 63f336dd01d36a2418f9ad0e7b0786e8, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 937817490}
+    m_Data: {fileID: 11400000, guid: 5533f0435efa76b4b8a032e53f6aed4e, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 16
-    m_Data: {fileID: 160073468}
+    m_Data: {fileID: 11400000, guid: d86f8727721b1e1419023921d5b753d7, type: 2}
   m_TileSpriteArray:
+  - m_RefCount: 16
+    m_Data: {fileID: -8185252286816643056, guid: b7e5ed0848f96274fbf6ff47c3ebb7c4, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 1053751637}
+    m_Data: {fileID: 2131905235816923139, guid: 66e4316853e974f43b010c7d677aadbc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1825198956}
+    m_Data: {fileID: 5360865821393007139, guid: 66e4316853e974f43b010c7d677aadbc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 913931938}
+    m_Data: {fileID: 866207708871784929, guid: 66e4316853e974f43b010c7d677aadbc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1201781704}
+    m_Data: {fileID: -5522471304105921020, guid: 66e4316853e974f43b010c7d677aadbc, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1954249407}
-  - m_RefCount: 16
-    m_Data: {fileID: 832338257}
+    m_Data: {fileID: -1522049115851505019, guid: 66e4316853e974f43b010c7d677aadbc, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 21
     m_Data:
@@ -4890,20 +3853,20 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+  - m_RefCount: 21
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
-  - m_RefCount: 16
-    m_Data: {r: 0.79127276, g: 0.37548557, b: 0.46292877, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.7034281, g: 0.45474073, b: 0.5321229, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.82604575, g: 0.49185973, b: 0.55470717, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.97975206, g: 0.67223, b: 0.7060166, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.871584, g: 0.4457775, b: 0.47234836, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.9092536, g: 0.443827, b: 0.55490476, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
+  - m_RefCount: 0
+    m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
+  - m_RefCount: 0
+    m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
+  - m_RefCount: 0
+    m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
+  - m_RefCount: 0
+    m_Data: {r: 1.65e-43, g: 1.65e-43, b: 1.65e-43, a: 1.65e-43}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4959,17 +3922,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: YELLOW
-  rank: 2
+  rank: 0
   manager: {fileID: 2047284921}
-  renderers:
-  - {fileID: 1532890807}
-  - {fileID: 1062429237}
-  - {fileID: 438055555}
-  - {fileID: 958881407}
   layerAlphaMul:
   - 1
   - 0.32
   - 0.12
+  brightnessMultiplier: 1
   pulseAmount: 0.08
   pulseSpeed: 3
 --- !u!212 &1532890807
@@ -5016,12 +3975,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.9612434, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5079,16 +4038,13 @@ MonoBehaviour:
   id: RED
   playerTag: Player
   interactKey: 101
-  offSprite: {fileID: 6259760108535199168, guid: 282df95fd9a4fa2469b1e92dbea4c49b, type: 3}
-  onSprite: {fileID: -755115743525598541, guid: 02295c63592b33c4e87b6cfb38afec96, type: 3}
+  offSprite: {fileID: -7254836972934523003, guid: 38eaa517bbdac5e4e8a0c2b863e0e9ee, type: 3}
+  onSprite: {fileID: 6316130307270242188, guid: 7a9e9d3bb860f4948903fec13bfc4a44, type: 3}
   promptUI: {fileID: 0}
   sfx: {fileID: 0}
   flipOk: {fileID: 0}
   flipWrong: {fileID: 0}
   manager: {fileID: 0}
-  sr: {fileID: 0}
-  playerInside: 0
-  isOn: 0
 --- !u!61 &1606354376
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5179,7 +4135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6259760108535199168, guid: 282df95fd9a4fa2469b1e92dbea4c49b, type: 3}
+  m_Sprite: {fileID: -7254836972934523003, guid: 38eaa517bbdac5e4e8a0c2b863e0e9ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5187,7 +4143,7 @@ SpriteRenderer:
   m_Size: {x: 0.75, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1606354378
@@ -5365,17 +4321,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: GREEN
-  rank: 3
+  rank: 2
   manager: {fileID: 2047284921}
-  renderers:
-  - {fileID: 1648808264}
-  - {fileID: 1001946835}
-  - {fileID: 572586314}
-  - {fileID: 172305325}
   layerAlphaMul:
   - 1
   - 0.32
   - 0.12
+  brightnessMultiplier: 0.85
   pulseAmount: 0.08
   pulseSpeed: 3
 --- !u!212 &1648808264
@@ -5422,12 +4374,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0.49000108, g: 1, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.64, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5496,217 +4448,6 @@ Transform:
   - {fileID: 555771621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!213 &1825198956
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &1836627637
 GameObject:
   m_ObjectHideFlags: 0
@@ -5717,7 +4458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1836627638}
   - component: {fileID: 1836627639}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Halo_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5780,18 +4521,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 0, g: 0.18431373, b: 1, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 0, g: 0.49803922, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1873327533
@@ -5888,217 +4629,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!213 &1954249407
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    secondaryTextures: []
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 3
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_ScriptableObjects: []
-  m_SpriteID: 
 --- !u!1 &1971941747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6164,7 +4694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997451874}
   - component: {fileID: 1997451875}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6227,18 +4757,18 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1552326807
-  m_SortingLayer: 0
+  m_SortingLayerID: 1189721725
+  m_SortingLayer: -1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
-  m_Color: {r: 0, g: 0.18431373, b: 1, a: 0}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
+  m_Color: {r: 0, g: 0.49803922, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.95, y: 1.17}
+  m_Size: {x: 2.63, y: 13.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2047284920
@@ -6277,7 +4807,7 @@ MonoBehaviour:
   - {fileID: 942926329}
   - {fileID: 293409732}
   player: {fileID: 309380005}
-  minAlpha: 0.2
+  minAlpha: 0.25
   maxAlpha: 1
   proximityMode: 1
   fullBrightDistance: 1.5
@@ -6355,10 +4885,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1114740877
-  m_SortingLayer: 0
+  m_SortingLayerID: -5914779
+  m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5542494849302837800, guid: 7023c6c3bee0bb84c808c980600f63fe, type: 3}
+  m_Sprite: {fileID: -5542494849302837800, guid: 4680a096d741c744abc2977eef7ba651, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
@@ -6366,7 +4896,7 @@ SpriteRenderer:
   m_Size: {x: 1.95, y: 1.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2061852692
@@ -6384,40 +4914,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2124985962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 913931938}
-  m_Color: {r: 0.871584, g: 0.4457775, b: 0.47234836, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -16,9 +16,9 @@ TagManager:
   - UI
   - Ground
   - Background
-  - 
-  - 
-  - 
+  - GlowFX
+  - Ladder
+  - OneWayPlatform
   - 
   - 
   - 
@@ -43,6 +43,12 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3441371575
+    locked: 0
+  - name: EnvironmentDark
+    uniqueID: 4289052517
+    locked: 0
+  - name: GlowFX
+    uniqueID: 1189721725
     locked: 0
   - name: Default
     uniqueID: 0
