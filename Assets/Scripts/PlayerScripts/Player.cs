@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -245,9 +246,17 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        //If touch Yellow Platform, prevent gravity switch
         if (collision.gameObject.CompareTag("YellowPlatform"))
         {
             onYellowPlatform = true; // Disable jumping when on a "NoJumpPlatform"
+        }
+
+        //If touch Fire, reset level
+        if (collision.gameObject.CompareTag("Fire"))
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
         }
     }
 
