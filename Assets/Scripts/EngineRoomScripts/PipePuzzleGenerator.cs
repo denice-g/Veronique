@@ -6,15 +6,15 @@ public class PipePuzzleGenerator : MonoBehaviour
 {
     public static PipePuzzleGenerator Instance;
 
-    [Header("Grid Size (16x9)")]
+    [Header("---------- Grid Size ----------")]
     public int columns = 16;
     public int rows = 9;
 
-    [Header("References")]
+    [Header("---------- References ----------")]
     public PipeTile tilePrefab; // assign prefab (UI Image + PipeTile)
     public Transform gridParent; // GridLayoutGroup parent
 
-    [Header("Sprites")]
+    [Header("---------- Pipe Sprites ----------")]
     public Sprite blankSprite;
     public Sprite straightSprite;
     public Sprite cornerSprite;
@@ -22,15 +22,19 @@ public class PipePuzzleGenerator : MonoBehaviour
 
     [Header("---------- MenuUIs ----------")]
     [SerializeField] private GameObject puzzle1UI;
-
-    [Header("Game Objects")]
     public GameObject Fire1;
 
     private PipeTile[,] tiles;
     private List<Vector2Int> solutionPath;
 
-    void Awake() => Instance = this;
-    void Start() => GeneratePuzzle();
+    void Awake()
+    {
+        Instance = this;
+    }
+    void Start()
+    {
+        GeneratePuzzle();
+    }
 
     public void GeneratePuzzle()
     {
@@ -44,7 +48,9 @@ public class PipePuzzleGenerator : MonoBehaviour
 
         // Clear old children
         for (int i = gridParent.childCount - 1; i >= 0; i--)
+        {
             DestroyImmediate(gridParent.GetChild(i).gameObject);
+        }
 
         // Instantiate blank tiles (no visuals yet)
         for (int y = 0; y < rows; y++)
@@ -97,6 +103,7 @@ public class PipePuzzleGenerator : MonoBehaviour
     {
         // Clear all tiles
         for (int x = 0; x < columns; x++)
+        {
             for (int y = 0; y < rows; y++)
             {
                 var t = tiles[x, y];
@@ -107,6 +114,7 @@ public class PipePuzzleGenerator : MonoBehaviour
                 t.ApplyVisual();
                 t.UpdateConnections();
             }
+        }
 
         Vector2Int start = new Vector2Int(0, 0);
         Vector2Int end = new Vector2Int(columns - 1, rows - 1);
@@ -180,7 +188,9 @@ public class PipePuzzleGenerator : MonoBehaviour
         foreach (var cell in solutionPath)
         {
             if ((cell.x == 0 && cell.y == 0) || (cell.x == columns - 1 && cell.y == rows - 1))
+            {
                 continue;
+            }
 
             var tile = tiles[cell.x, cell.y];
             int max = (tile.asset == PipeTile.Asset.Straight) ? 2 : 4;
@@ -189,20 +199,6 @@ public class PipePuzzleGenerator : MonoBehaviour
             tile.UpdateConnections();
         }
     }
-
-    /*bool IsAdjacentToPath(Vector2Int cell)
-    {
-        Vector2Int[] n = new Vector2Int[] {
-            new Vector2Int(1,0), new Vector2Int(-1,0), new Vector2Int(0,1), new Vector2Int(0,-1)
-        };
-        foreach (var d in n)
-        {
-            Vector2Int test = cell + d;
-            if (test.x < 0 || test.x >= columns || test.y < 0 || test.y >= rows) continue;
-            if (solutionPath.Contains(test)) return true;
-        }
-        return false;
-    }*/
 
     List<Vector2Int> MakeRandomSimplePath(Vector2Int start, Vector2Int end)
     {

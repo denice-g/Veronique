@@ -3097,8 +3097,14 @@ MonoBehaviour:
   optionsMenuUI: {fileID: 844014754}
   audioMenuUI: {fileID: 491865160}
   confirmMenuUI: {fileID: 1139354434}
+  timerUI: {fileID: 0}
+  gameOverUI: {fileID: 0}
   confirmQuitButton: {fileID: 1507187213}
   confirmExitButton: {fileID: 1850703965}
+  TimeLeft: 0
+  InCrisis: 0
+  isGameOver: 0
+  timerLabel: {fileID: 0}
 --- !u!114 &476002009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9281,9 +9287,9 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1440}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -9299,7 +9305,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1575399119}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -11738,7 +11744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 61, y: -21.800049}
+  m_AnchoredPosition: {x: 61, y: -21.800797}
   m_SizeDelta: {x: -861.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1689430239
