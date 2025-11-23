@@ -8,6 +8,9 @@ public class WordGame : MonoBehaviour
     public TMP_Text statusText;
     public TMP_Text wordsFoundText;
 
+    public GameObject puzzlePanel;
+    public GameObject laikaGhost;
+
     public List<string> validWords;
     public int wordsNeededToWin = 10;
 
@@ -38,6 +41,8 @@ public class WordGame : MonoBehaviour
                 if (wordsFound >= wordsNeededToWin)
                 {
                     statusText.text = "YOU WIN!";
+
+                    puzzlePanel.SetActive(false);
                 }
             }
             else
