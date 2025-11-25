@@ -38,12 +38,15 @@ public class Player : MonoBehaviour
 
     private Coroutine dropRoutine;
 
+     public static Player Instance;
+
     //Audio manager for player sounds
     private AudioManager audioManager;
 
     //To get access to audioManager
     private void Awake()
     {
+        Instance = this;
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
