@@ -13,7 +13,6 @@ public class ComputerScreenUI : MonoBehaviour
 
     public int maxDigits = 4;
 
-
     public GameObject puzzleCompleteLight;
     public GameObject puzzleCompleteScreen;
 
@@ -22,14 +21,15 @@ public class ComputerScreenUI : MonoBehaviour
 
     public GameObject SceneSwap;
 
+    // ===== NEW: Add reference to puzzle manager =====
+    [Header("Puzzle Integration")]
+    public StoragePuzzleManager puzzleManager;
 
     bool _playerInRange;
     bool _ScreenActive;
     string _currentInput = "";
     bool _puzzleCompleted = false;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (computerScreenUI != null) computerScreenUI.SetActive(false);
@@ -42,6 +42,11 @@ public class ComputerScreenUI : MonoBehaviour
 
         if (puzzleCompleteLightOff != null) puzzleCompleteLightOff.SetActive(true);
 
+        // ===== NEW: Auto-find puzzle manager =====
+        if (puzzleManager == null)
+        {
+            puzzleManager = FindObjectOfType<StoragePuzzleManager>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,7 +61,6 @@ public class ComputerScreenUI : MonoBehaviour
             _playerInRange = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (_playerInRange && Input.GetKeyDown(KeyCode.E) && !_puzzleCompleted)
@@ -64,11 +68,16 @@ public class ComputerScreenUI : MonoBehaviour
             _ScreenActive = !_ScreenActive;
             computerScreenUI.SetActive(_ScreenActive);
 
+            // ===== NEW: Notify hint manager when computer opens =====
+            if (_ScreenActive && puzzleManager != null)
+            {
+                // This will trigger redirect to calendar if player hasn't viewed it
+                puzzleManager.OnPasswordAttempt(false); // Just to register computer access
+            }
+
             if (!_ScreenActive)
                 ClearInput();
-
         }
-
     }
 
     private void UpdateDisplay()
@@ -95,7 +104,6 @@ public class ComputerScreenUI : MonoBehaviour
 
         if (_currentInput.Length == maxDigits)
             CheckCode();
-
     }
 
     public void OnClearButtonPressed()
@@ -124,15 +132,23 @@ public class ComputerScreenUI : MonoBehaviour
 
             if (SceneSwap != null) SceneSwap.SetActive(true);
 
+            // ===== NEW: Notify puzzle manager of success =====
+            if (puzzleManager != null)
+            {
+                puzzleManager.OnPasswordAttempt(true);
+            }
         }
         else
         {
             Debug.Log("incorrect");
 
+            // ===== NEW: Notify puzzle manager of failure =====
+            if (puzzleManager != null)
+            {
+                puzzleManager.OnPasswordAttempt(false);
+            }
         }
 
         ClearInput();
     }
-
-   
 }
