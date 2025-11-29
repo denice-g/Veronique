@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
         }
 
         // --- Gravity flip (disabled while climbing) ---
-        if (!isClimbing && Input.GetKeyDown(KeyCode.F) && !onYellowPlatform)
+        if (!isClimbing && Input.GetKeyDown(KeyCode.F) && !onYellowPlatform && isGrounded)
             ToggleGravity();
 
         // Press S while grounded to drop through a one-way platform (e.g., LadderTopZone)
