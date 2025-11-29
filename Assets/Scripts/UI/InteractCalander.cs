@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class InteractCalander : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class InteractCalander : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             _playerInRange = true;
+            Console.Write("here");
         }
     }
 

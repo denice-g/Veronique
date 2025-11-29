@@ -4,14 +4,17 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Ghost NPC
   - Audio
   - YellowPlatform
   - WireBox
+  - Box
+  - Fire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - pop-up
   - Water
   - UI
   - Ground
@@ -19,12 +22,8 @@ TagManager:
   - GlowFX
   - Ladder
   - OneWayPlatform
+  - window
   - Wire
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -53,6 +52,12 @@ TagManager:
     locked: 0
   - name: GlowFX
     uniqueID: 1189721725
+    locked: 0
+  - name: window
+    uniqueID: 4098756569
+    locked: 0
+  - name: pop-up
+    uniqueID: 2539042337
     locked: 0
   - name: Default
     uniqueID: 0
