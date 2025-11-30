@@ -6,21 +6,40 @@ public class NavDoor : MonoBehaviour
     [SerializeField] private WireBox wireBox2;
     [SerializeField] private WireBox wireBox3;
     [SerializeField] private GameObject doorVisual;
+    
+    [Header("NPC Integration")]
+    [SerializeField] private WireNPCInstructor npcInstructor;
+
+    public VictoryArrow victoryArrow;
+    
     private bool doorOpened = false;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // Auto-find NPC if not assigned
+        if (npcInstructor == null)
+        {
+            npcInstructor = FindObjectOfType<WireNPCInstructor>();
+        }
+
+        // Auto-find VictoryArrow if not assigned
+        if (victoryArrow == null)
+        {
+            victoryArrow = FindObjectOfType<VictoryArrow>();
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected)
+        if (!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected)
         {
             OpenDoor();
+
+            // Show victory arrow (no animation, just appears)
+            if (victoryArrow != null)
+            {
+                victoryArrow.ShowVictoryArrow();
+            }
         }
     }
 
@@ -37,6 +56,11 @@ public class NavDoor : MonoBehaviour
             doorVisual.transform.Rotate(0, 60, 0);
         }
 
-        // Optional: play sound, animation, etc.
+        // Notify NPC of victory
+        if (npcInstructor != null)
+        {
+            npcInstructor.ShowVictoryMessage();
+        }
+
     }
 }

@@ -156,7 +156,7 @@ public class WordGame : MonoBehaviour
 
     private void WinPuzzle()
     {
-        statusText.text = "🎉 PUZZLE COMPLETE! 🎉";
+        statusText.text = "PUZZLE COMPLETE!";
 
         // Notify hint manager of victory
         if (hintManager != null)

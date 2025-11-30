@@ -209,7 +209,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -1
+  m_SortingLayer: -5
   m_SortingOrder: 1
   m_Sprite: {fileID: 3805213057462174045, guid: 37aed1b7c82a8f24e87b9653a103703c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -1
+  m_SortingLayer: -5
   m_SortingOrder: 1
   m_Sprite: {fileID: 8461789522561812886, guid: 932c228d1d1cae04daa3ce1dfb14370c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -839,7 +839,7 @@ Transform:
   m_GameObject: {fileID: 865430087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5170555, y: 3.0049114, z: -10}
+  m_LocalPosition: {x: 4.156415, y: 2.9385414, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -952,7 +952,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -1
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.675, y: 2.95, z: 0}
@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 1320639580}
   - component: {fileID: 1320639579}
   - component: {fileID: 1320639581}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2012,7 +2012,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320639577}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -2160,7 +2160,7 @@ GameObject:
   - component: {fileID: 1704330643}
   - component: {fileID: 1704330642}
   - component: {fileID: 1704330644}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2244,7 +2244,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704330640}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -2529,10 +2529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588328ae9b5d6094280d8bb6ef78b2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  points:
-  - {fileID: 1467165656}
-  - {fileID: 1592462693}
 --- !u!61 &1894133808
 BoxCollider2D:
   m_ObjectHideFlags: 0

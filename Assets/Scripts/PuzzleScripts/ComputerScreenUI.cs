@@ -122,8 +122,6 @@ public class ComputerScreenUI : MonoBehaviour
             _ScreenActive = false;
             computerScreenUI.SetActive(false);
 
-            if(playerMoveScript != null) playerMoveScript.enabled = true;
-
             if (puzzleCompleteLight != null) puzzleCompleteLight.SetActive(true);
 
             if (puzzleCompleteScreen != null) puzzleCompleteScreen.SetActive(true);

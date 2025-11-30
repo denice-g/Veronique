@@ -1139,7 +1139,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -2
   m_Sprite: {fileID: 6576858945348452411, guid: 24ea4d7aa5ce5b941860db9d02211dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1708,7 +1708,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1152356169552002576, guid: a4ae80a69173651458ac3eed7a9669e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2303,7 +2303,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -2
   m_Sprite: {fileID: 6576858945348452411, guid: 24ea4d7aa5ce5b941860db9d02211dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2640,7 +2640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -2}
+  m_AnchoredPosition: {x: 0, y: -2}
   m_SizeDelta: {x: -3.0805664, y: 1.6419678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377800064
@@ -3263,7 +3263,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 458234796028026950, guid: 0bd3038d6e7a1544aadcbf5f3e937a22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3305,7 +3305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   calander: {fileID: 107158203}
-  playerMoveScript: {fileID: 716758628}
+  playerMoveScript: {fileID: 0}
 --- !u!61 &443691147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3547,14 +3547,8 @@ MonoBehaviour:
   confirmMenuUI: {fileID: 1139354434}
   timerUI: {fileID: 0}
   gameOverUI: {fileID: 0}
-  timerUI: {fileID: 0}
-  gameOverUI: {fileID: 0}
   confirmQuitButton: {fileID: 1507187213}
   confirmExitButton: {fileID: 1850703965}
-  TimeLeft: 0
-  InCrisis: 0
-  isGameOver: 0
-  timerLabel: {fileID: 0}
   TimeLeft: 0
   InCrisis: 0
   isGameOver: 0
@@ -8487,7 +8481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -1.001297}
+  m_AnchoredPosition: {x: 0, y: -1.001297}
   m_SizeDelta: {x: -3.0805664, y: 1.6419678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265298049
@@ -9188,7 +9182,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -1
   m_Sprite: {fileID: -6540226725067257891, guid: d1704936e4c7a0044b7ad51032cbc8b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9275,7 +9269,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -2
   m_Sprite: {fileID: 6576858945348452411, guid: 24ea4d7aa5ce5b941860db9d02211dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9395,13 +9389,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.2
+  m_fontSizeBase: 0.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -9433,7 +9427,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.7636169, y: 0, z: -0.61719364, w: -0.24421632}
+  m_margin: {x: -1.7636169, y: 0, z: 0.45692867, w: -0.66544056}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9738,7 +9732,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2405194075072490996, guid: a73c28cf04232034c952da15305846c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9826,7 +9820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   calander: {fileID: 695193558}
-  playerMoveScript: {fileID: 716758628}
+  playerMoveScript: {fileID: 0}
 --- !u!1 &1482349163
 GameObject:
   m_ObjectHideFlags: 0
@@ -11197,16 +11191,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583829909}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 301549365}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -423, y: -59}
+  m_AnchoredPosition: {x: 420, y: 204}
   m_SizeDelta: {x: 67.8661, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583829911
@@ -12345,7 +12339,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -2
   m_Sprite: {fileID: 6576858945348452411, guid: 24ea4d7aa5ce5b941860db9d02211dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12699,7 +12693,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: -1
   m_Sprite: {fileID: 9074688972041867787, guid: fadef1ee5ce8d6843b444db8cb7b7b27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12931,7 +12925,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -853595721
-  m_SortingLayer: -3
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: -5011576471144385799, guid: 0d1401d285a9afa4b923cc55cc3e2e57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12973,7 +12967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   calander: {fileID: 593163862}
-  playerMoveScript: {fileID: 716758628}
+  playerMoveScript: {fileID: 0}
 --- !u!61 &1963174498
 BoxCollider2D:
   m_ObjectHideFlags: 0

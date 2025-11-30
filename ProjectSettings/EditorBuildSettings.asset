@@ -21,11 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Hallway_To_Cockpit_Right.unity
     guid: 2c9673d734a2a1444827b5bca827403d
   - enabled: 1
+    path: Assets/Scenes/Control_Room.unity
+    guid: f630599ed64eeed44875cf91b23bffe9
+  - enabled: 0
     path: Assets/Scenes/Puzzle_One.unity
     guid: 91277ecc94c5d784d86da3744030c0e9
   - enabled: 1
     path: Assets/Scenes/End_Screen.unity
     guid: 6ac2bd62f2a74f745a603a7427cfb586
+  - enabled: 1
+    path: Assets/Scenes/Hallway_To_Cockpit_Left.unity
+    guid: 43f09e2258cb2a34cacda7792b3d8d59
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
