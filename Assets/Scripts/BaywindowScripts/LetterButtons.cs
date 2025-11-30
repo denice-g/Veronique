@@ -12,7 +12,7 @@ public class LetterButton : MonoBehaviour
     [Header("References")]
     public Button button;
     public TMP_Text buttonText;
-    public Image buttonImage;
+    //public Image buttonImage;
     
     [Header("Visual States")]
     public Color normalColor = Color.white;
@@ -31,9 +31,6 @@ public class LetterButton : MonoBehaviour
             
         if (buttonText == null)
             buttonText = GetComponentInChildren<TMP_Text>();
-            
-        if (buttonImage == null)
-            buttonImage = GetComponent<Image>();
         
         // Get the letter from button text
         if (buttonText != null)
@@ -82,14 +79,6 @@ public class LetterButton : MonoBehaviour
             button.interactable = false;
         }
         
-        // Change visual appearance
-        if (buttonImage != null)
-        {
-            Color newColor = pressedColor;
-            newColor.a = pressedAlpha;
-            buttonImage.color = newColor;
-        }
-        
         if (buttonText != null)
         {
             Color textColor = buttonText.color;
@@ -113,13 +102,6 @@ public class LetterButton : MonoBehaviour
         {
             Debug.Log("resetting now 2..");
             button.interactable = true;
-        }
-        
-        // Restore normal appearance
-        if (buttonImage != null)
-        {
-            Debug.Log("resetting now 3..");
-            buttonImage.color = normalColor;
         }
         
         if (buttonText != null)

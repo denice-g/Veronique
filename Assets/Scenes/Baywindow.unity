@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 95124490}
   - component: {fileID: 95124489}
   - component: {fileID: 95124488}
+  - component: {fileID: 95124491}
   m_Layer: 5
   m_Name: L_Button (6)
   m_TagString: Untagged
@@ -312,19 +313,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95124489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: l
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &95124489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +352,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95124486}
   m_CullTransparentMesh: 1
+--- !u!114 &95124491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95124486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 95124488}
+  buttonText: {fileID: 1935089048}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &119457461
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +509,81 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08729587, y: -2.246017}
   m_Size: {x: 0.95178187, y: 0.95178187}
   m_Direction: 1
+--- !u!1 &142631857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142631860}
+  - component: {fileID: 142631859}
+  - component: {fileID: 142631858}
+  m_Layer: 5
+  m_Name: NPC_Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &142631858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142631857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3342532279652475034, guid: e4952ddf59b918d44899821b37d846e0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &142631859
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142631857}
+  m_CullTransparentMesh: 1
+--- !u!224 &142631860
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142631857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 771972798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 417, y: -202}
+  m_SizeDelta: {x: 92.2402, y: 93.651}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &153378102
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +596,7 @@ GameObject:
   - component: {fileID: 153378106}
   - component: {fileID: 153378105}
   - component: {fileID: 153378104}
+  - component: {fileID: 153378107}
   m_Layer: 5
   m_Name: E_Button (5)
   m_TagString: Untagged
@@ -585,19 +667,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153378105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: e
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &153378105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +706,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153378102}
   m_CullTransparentMesh: 1
+--- !u!114 &153378107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153378102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 153378104}
+  buttonText: {fileID: 723223933}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &317169455
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,9 +890,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1930250917}
-  - {fileID: 1764852599}
-  - {fileID: 2094324916}
+  - {fileID: 771972798}
+  - {fileID: 798382940}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -871,10 +957,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!4 &407845731 stripped
 Transform:
@@ -893,6 +979,7 @@ GameObject:
   - component: {fileID: 482428221}
   - component: {fileID: 482428220}
   - component: {fileID: 482428219}
+  - component: {fileID: 482428222}
   m_Layer: 5
   m_Name: T_Button (4)
   m_TagString: Untagged
@@ -963,19 +1050,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 482428220}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: t
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &482428220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1014,6 +1089,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482428217}
   m_CullTransparentMesh: 1
+--- !u!114 &482428222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482428217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 482428219}
+  buttonText: {fileID: 1121212971}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &482548531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1390,7 @@ GameObject:
   - component: {fileID: 551721440}
   - component: {fileID: 551721439}
   - component: {fileID: 551721438}
+  - component: {fileID: 551721441}
   m_Layer: 5
   m_Name: I_Button (10)
   m_TagString: Untagged
@@ -1368,19 +1461,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 551721439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: i
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &551721439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,6 +1500,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551721436}
   m_CullTransparentMesh: 1
+--- !u!114 &551721441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551721436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 551721438}
+  buttonText: {fileID: 980738245}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &592542105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 791194845}
+      - m_Target: {fileID: 791194847}
         m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
         m_MethodName: ClearWord
         m_Mode: 1
@@ -1992,6 +2090,7 @@ GameObject:
   - component: {fileID: 753569077}
   - component: {fileID: 753569076}
   - component: {fileID: 753569075}
+  - component: {fileID: 753569078}
   m_Layer: 5
   m_Name: O_Button (1)
   m_TagString: Untagged
@@ -2062,19 +2161,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753569076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: o
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &753569076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,6 +2200,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753569073}
   m_CullTransparentMesh: 1
+--- !u!114 &753569078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753569073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 753569075}
+  buttonText: {fileID: 1820014582}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
+--- !u!1 &771972797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 771972798}
+  - component: {fileID: 771972800}
+  - component: {fileID: 771972799}
+  - component: {fileID: 771972801}
+  m_Layer: 5
+  m_Name: NPC_HIntPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &771972798
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771972797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1338133301}
+  - {fileID: 142631860}
+  m_Father: {fileID: 379569415}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &771972799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771972797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &771972800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771972797}
+  m_CullTransparentMesh: 1
+--- !u!225 &771972801
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771972797}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &772829073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 791194846}
-  - component: {fileID: 791194845}
+  - component: {fileID: 791194847}
   m_Layer: 0
   m_Name: WordGameManager
   m_TagString: Untagged
@@ -2266,369 +2460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &791194845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791194844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d845643dacd1a448623e22e369cc80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentWordText: {fileID: 772829076}
-  statusText: {fileID: 1459970642}
-  wordsFoundText: {fileID: 666411383}
-  puzzlePanel: {fileID: 1266686409}
-  laikaGhost: {fileID: 1930250915}
-  validWords:
-  - constellation
-  - ocellations
-  - collations
-  - connotates
-  - nonelastic
-  - notonectal
-  - ocellation
-  - tenaillons
-  - coastline
-  - collation
-  - colonials
-  - conotions
-  - connotate
-  - consolate
-  - cotenants
-  - enactions
-  - nonstatic
-  - oscillate
-  - notations
-  - sectional
-  - nonsocial
-  - nonlocals
-  - tensional
-  - locations
-  - canniest
-  - cliental
-  - coaliest
-  - colonels
-  - colonial
-  - colonies
-  - constant
-  - connotes
-  - contents
-  - contains
-  - elation
-  - location
-  - sanction
-  - societal
-  - toenails
-  - actions
-  - ancient
-  - anoints
-  - atonics
-  - canines
-  - cannels
-  - cannoli
-  - catties
-  - cellist
-  - clients
-  - colonel
-  - consent
-  - console
-  - contain
-  - content
-  - contest
-  - coolest
-  - cottons
-  - elastic
-  - elation
-  - entails
-  - incents
-  - inclose
-  - install
-  - instant
-  - instate
-  - intents
-  - isolate
-  - isotone
-  - lactose
-  - latinos
-  - lattice
-  - lentils
-  - littles
-  - locates
-  - lotion
-  - nailset
-  - ocelots
-  - saltine
-  - section
-  - talents
-  - tallies
-  - tenants
-  - tennis
-  - tension
-  - toenail
-  - toilets
-  - action
-  - aliens
-  - ancles
-  - anoint
-  - antics
-  - ascent
-  - attics
-  - attone
-  - canine
-  - cannel
-  - cannot
-  - canoes
-  - canons
-  - casino
-  - castle
-  - cattle
-  - cellos
-  - cleans
-  - cleats
-  - client
-  - closet
-  - enacts
-  - enlist
-  - entail
-  - incase
-  - incest
-  - inlets
-  - innate
-  - insane
-  - insect
-  - insole
-  - inact
-  - intels
-  - intent
-  - latent
-  - latino
-  - lentil
-  - lilacs
-  - locals
-  - locate
-  - nation
-  - nicest
-  - notice
-  - notion
-  - oceans
-  - onions
-  - online
-  - saline
-  - saloon
-  - solace
-  - stance
-  - static
-  - stolen
-  - talent
-  - talons
-  - tenant
-  - tinsel
-  - toilet
-  - aeons
-  - aisle
-  - alien
-  - aline
-  - aloes
-  - alone
-  - antic
-  - canoe
-  - canon
-  - cello
-  - caste
-  - cents
-  - clean
-  - clone
-  - close
-  - coals
-  - coats
-  - coins
-  - colon
-  - colts
-  - cones
-  - icons
-  - inlet
-  - intel
-  - laces
-  - lanes
-  - leans
-  - least
-  - lilac
-  - linen
-  - lines
-  - loans
-  - loose
-  - losen
-  - nails
-  - neats
-  - notes
-  - ocean
-  - onset
-  - onion
-  - saint
-  - salon
-  - satin
-  - scale
-  - scent
-  - scone
-  - scoot
-  - slain
-  - snail
-  - stale
-  - stain
-  - steal
-  - stole
-  - stool
-  - tacos
-  - tails
-  - taint
-  - talon
-  - taste
-  - tilts
-  - toast
-  - toils
-  - toile
-  - tones
-  - tools
-  - total
-  - totes
-  - aces
-  - acne
-  - acts
-  - aeon
-  - aloe
-  - alto
-  - cain
-  - call
-  - cans
-  - case
-  - cast
-  - cats
-  - cell
-  - cist
-  - cite
-  - clot
-  - coal
-  - coat
-  - cool
-  - cone
-  - cons
-  - cost
-  - cots
-  - east
-  - eats
-  - icon
-  - into
-  - ions
-  - lace
-  - last
-  - lane
-  - lain
-  - last
-  - late
-  - lats
-  - lean
-  - lens
-  - lent
-  - lets
-  - lice
-  - lies
-  - line
-  - list
-  - lite
-  - loan
-  - lone
-  - loot
-  - lost
-  - lose
-  - lots
-  - nail
-  - neat
-  - neon
-  - nest
-  - nets
-  - nice
-  - nose
-  - nine
-  - none
-  - noon
-  - noon
-  - note
-  - oats
-  - oils
-  - once
-  - ones
-  - sail
-  - sain
-  - sale
-  - sane
-  - salt
-  - scan
-  - seal
-  - seat
-  - sell
-  - slit
-  - snot
-  - solo
-  - taco
-  - tail
-  - tale
-  - tall
-  - teal
-  - teas
-  - tell
-  - tent
-  - test
-  - tics
-  - tilt
-  - tint
-  - toil
-  - toes
-  - toll
-  - tone
-  - tons
-  - tool
-  - toon
-  - tote
-  - tots
-  - ace
-  - act
-  - ail
-  - ate
-  - ant
-  - can
-  - cat
-  - con
-  - eat
-  - eon
-  - ice
-  - inn
-  - ion
-  - let
-  - lit
-  - lot
-  - net
-  - not
-  - oat
-  - oil
-  - one
-  - sea
-  - sat
-  - son
-  - sit
-  - sin
-  - tan
-  - tea
-  - tic
-  - tin
-  - tie
-  - toe
-  - ton
-  - too
-  wordsNeededToWin: 10
 --- !u!4 &791194846
 Transform:
   m_ObjectHideFlags: 0
@@ -2644,6 +2475,637 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791194847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791194844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d845643dacd1a448623e22e369cc80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWordText: {fileID: 772829076}
+  statusText: {fileID: 1459970642}
+  wordsFoundText: {fileID: 666411383}
+  puzzlePanel: {fileID: 1266686409}
+  validWords:
+  - constellation
+  - ocellations
+  - collations
+  - connotates
+  - nonelastic
+  - notonectal
+  - ocellation
+  - tenaillons
+  - atenolols
+  - attollens
+  - cantonise
+  - centonist
+  - clinostat
+  - cloisonne
+  - coastline
+  - coelostat
+  - collation
+  - colonials
+  - conations
+  - connotate
+  - consolate
+  - contlines
+  - cotenants
+  - cotillons
+  - enactions
+  - intonacos
+  - intonates
+  - localites
+  - locations
+  - nonlocals
+  - nonsocial
+  - nonstatic
+  - notations
+  - oscillate
+  - sectional
+  - tonalites
+  - ancients
+  - canniest
+  - cannolis
+  - canoeist
+  - canonize
+  - canonist
+  - cantiest
+  - cantions
+  - centoist
+  - cliental
+  - coaliest
+  - colonels
+  - colonial
+  - colonies
+  - colonize
+  - colonist
+  - conation
+  - connotes
+  - constant
+  - constate
+  - contains
+  - contents
+  - cotenant
+  - ecotonal
+  - elations
+  - enaction
+  - insolate
+  - insolent
+  - instance
+  - intonate
+  - lattices
+  - localist
+  - location
+  - looniest
+  - nonlocal
+  - nontitle
+  - notation
+  - octanols
+  - sanction
+  - scallion
+  - societal
+  - stallion
+  - toenails
+  - tonalite
+  - totalise
+  - toolcase
+  - actions
+  - altoist
+  - ancient
+  - anoetic
+  - anoints
+  - atonics
+  - canines
+  - cannels
+  - cannoli
+  - catties
+  - cellist
+  - clients
+  - colonel
+  - consent
+  - console
+  - contain
+  - content
+  - contest
+  - coolest
+  - cooties
+  - cottons
+  - elastic
+  - elation
+  - entails
+  - incents
+  - install
+  - instant
+  - instate
+  - intents
+  - intones
+  - ionones
+  - iosolate
+  - isotone
+  - lactose
+  - latinos
+  - latices
+  - lattice
+  - lentils
+  - littles
+  - locates
+  - loonies
+  - lotions
+  - nailset
+  - nations
+  - notices
+  - notions
+  - oatiest
+  - ocelots
+  - octants
+  - saltine
+  - section
+  - snottie
+  - sociate
+  - station
+  - stencil
+  - stollen
+  - tactile
+  - talents
+  - tallest
+  - tallies
+  - tenants
+  - tension
+  - toenail
+  - toilets
+  - toolset
+  - action
+  - aliens
+  - alines
+  - allies
+  - allots
+  - anoint
+  - antics
+  - ascent
+  - atones
+  - atonic
+  - attics
+  - canine
+  - cannel
+  - cannot
+  - canoes
+  - canons
+  - casino
+  - castle
+  - cellos
+  - cleans
+  - cleats
+  - client
+  - clones
+  - closet
+  - colons
+  - cosine
+  - cotton
+  - enacts
+  - enlist
+  - entail
+  - incase
+  - incent
+  - incest
+  - inlets
+  - innate
+  - insane
+  - insect
+  - insole
+  - intact
+  - intels
+  - intent
+  - ionone
+  - latent
+  - latest
+  - latino
+  - lentil
+  - lesion
+  - lilacs
+  - linens
+  - listen
+  - litest
+  - little
+  - locale
+  - locals
+  - locate
+  - loosen
+  - lotion
+  - nation
+  - nicest
+  - notice
+  - notion
+  - oceans
+  - ocelot
+  - octals
+  - octets
+  - octant
+  - onions
+  - online
+  - saline
+  - saloon
+  - secant
+  - social
+  - solace
+  - sonant
+  - sonnet
+  - stance
+  - static
+  - stella
+  - stolen
+  - taints
+  - talent
+  - tenant
+  - tinsel
+  - titans
+  - toilet
+  - toiles
+  - tonics
+  - tonsil
+  - acnes
+  - aeons
+  - aisle
+  - ailen
+  - aline
+  - alist
+  - allot
+  - alone
+  - antic
+  - atone
+  - attic
+  - cains
+  - calls
+  - canes
+  - canoe
+  - canon
+  - caste
+  - cello
+  - cells
+  - cents
+  - cites
+  - clans
+  - clean
+  - cleat
+  - clone
+  - close
+  - clots
+  - coals
+  - coast
+  - coats
+  - coils
+  - coins
+  - colon
+  - colts
+  - cools
+  - enact
+  - icons
+  - inlet
+  - inset
+  - intel
+  - laces
+  - leans
+  - lilac
+  - local
+  - loons
+  - loose
+  - loots
+  - losen
+  - lotto
+  - nails
+  - neats
+  - noise
+  - ocean
+  - octal
+  - onion
+  - onset
+  - saint
+  - salon
+  - satin
+  - scale
+  - scent
+  - scone
+  - scone
+  - scoot
+  - since
+  - slain
+  - slant
+  - slate
+  - slice
+  - snail
+  - sonic
+  - stain
+  - stall
+  - state
+  - steal
+  - still
+  - stole
+  - stone
+  - stool
+  - tacos
+  - tails
+  - talls
+  - talon
+  - taste
+  - tents
+  - tiles
+  - tills
+  - tints
+  - titan
+  - title
+  - toast
+  - toils
+  - tolls
+  - tones
+  - tonic
+  - tools
+  - toons
+  - toots
+  - total
+  - totes
+  - aces
+  - acne
+  - acts
+  - aeon
+  - ails
+  - aloe
+  - alto
+  - ants
+  - cain
+  - call
+  - cane
+  - cans
+  - case
+  - cast
+  - cats
+  - cell
+  - cent
+  - cist
+  - cite
+  - cine
+  - clan
+  - clot
+  - coal
+  - coat
+  - coil
+  - coin
+  - cola
+  - colt
+  - cone
+  - cons
+  - cool
+  - coos
+  - cost
+  - cote
+  - cots
+  - eats
+  - east
+  - eons
+  - icon
+  - ices
+  - inns
+  - into
+  - ions
+  - isle
+  - lace
+  - lane
+  - last
+  - late
+  - lean
+  - lens
+  - lent
+  - lice
+  - lies
+  - line
+  - lion
+  - lite
+  - lits
+  - loan
+  - lone
+  - loon
+  - loot
+  - lose
+  - lost
+  - lots
+  - nail
+  - nats
+  - neat
+  - neon
+  - nest
+  - nets
+  - nice
+  - nine
+  - nite
+  - noon
+  - oats
+  - once
+  - ones
+  - onto
+  - otto
+  - sail
+  - sale
+  - sall
+  - salt
+  - sane
+  - scan
+  - seal
+  - seat
+  - sell
+  - sent
+  - sill
+  - silt
+  - site
+  - slit
+  - slot
+  - snot
+  - soil
+  - sole
+  - solo
+  - soon
+  - stat
+  - taco
+  - tact
+  - tail
+  - tale
+  - tall
+  - teal
+  - teas
+  - tens
+  - tent
+  - test
+  - tics
+  - ties
+  - tile
+  - till
+  - tilt
+  - tins
+  - tint
+  - toes
+  - toil
+  - toll
+  - tone
+  - tons
+  - tool
+  - toon
+  - toot
+  - tote
+  - tots
+  - ace
+  - act
+  - all
+  - ant
+  - ate
+  - can
+  - cat
+  - con
+  - cot
+  - eat
+  - eon
+  - ice
+  - ill
+  - inn
+  - ins
+  - ion
+  - its
+  - lie
+  - lit
+  - lot
+  - net
+  - non
+  - not
+  - oat
+  - oil
+  - one
+  - sat
+  - sea
+  - set
+  - sin
+  - sit
+  - son
+  - tan
+  - tea
+  - ten
+  - tic
+  - tie
+  - tin
+  - toe
+  - ton
+  - too
+  - tot
+  - tis
+  - til
+  wordsNeededToWin: 10
+  hintManager: {fileID: 1764852600}
+  victoryArrow: {fileID: 798382941}
+  letterButtons:
+  - {fileID: 1134345740}
+  - {fileID: 753569078}
+  - {fileID: 922450100}
+  - {fileID: 1088423473}
+  - {fileID: 482428222}
+  - {fileID: 153378107}
+  - {fileID: 95124491}
+  - {fileID: 1931092227}
+  - {fileID: 1181093268}
+  - {fileID: 1863438785}
+  - {fileID: 551721441}
+  - {fileID: 1680285927}
+  - {fileID: 1977481784}
+--- !u!1 &798382939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798382940}
+  - component: {fileID: 798382943}
+  - component: {fileID: 798382942}
+  - component: {fileID: 798382941}
+  m_Layer: 5
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &798382940
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798382939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379569415}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 415, y: 17}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &798382941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798382939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b45ec3c196ef149bfeebeaef442d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowObject: {fileID: 798382939}
+  arrowImage: {fileID: 0}
+  arrowColor: {r: 0.2, g: 0.5, b: 1, a: 1}
+--- !u!114 &798382942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798382939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -8290785824618013035, guid: b833b766b1c3fd048a440ebbfe60403d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &798382943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798382939}
+  m_CullTransparentMesh: 1
 --- !u!1 &821475786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3531,7 @@ GameObject:
   - component: {fileID: 922450099}
   - component: {fileID: 922450098}
   - component: {fileID: 922450097}
+  - component: {fileID: 922450100}
   m_Layer: 5
   m_Name: N_Button (2)
   m_TagString: Untagged
@@ -3139,19 +3602,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 922450098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: n
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &922450098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3190,6 +3641,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922450095}
   m_CullTransparentMesh: 1
+--- !u!114 &922450100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922450095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 922450097}
+  buttonText: {fileID: 545593613}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &950580513
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,6 +3942,7 @@ GameObject:
   - component: {fileID: 1088423472}
   - component: {fileID: 1088423471}
   - component: {fileID: 1088423470}
+  - component: {fileID: 1088423473}
   m_Layer: 5
   m_Name: S_Button (3)
   m_TagString: Untagged
@@ -3544,19 +4013,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1088423471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: s
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1088423471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3595,6 +4052,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088423468}
   m_CullTransparentMesh: 1
+--- !u!114 &1088423473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088423468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1088423470}
+  buttonText: {fileID: 1803959177}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1121212969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3743,6 +4217,7 @@ GameObject:
   - component: {fileID: 1134345739}
   - component: {fileID: 1134345738}
   - component: {fileID: 1134345737}
+  - component: {fileID: 1134345740}
   m_Layer: 5
   m_Name: C_Button
   m_TagString: Untagged
@@ -3813,19 +4288,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1134345738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: c
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1134345738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3864,6 +4327,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134345735}
   m_CullTransparentMesh: 1
+--- !u!114 &1134345740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134345735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1134345737}
+  buttonText: {fileID: 950580515}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1181093263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +4356,7 @@ GameObject:
   - component: {fileID: 1181093267}
   - component: {fileID: 1181093266}
   - component: {fileID: 1181093265}
+  - component: {fileID: 1181093268}
   m_Layer: 5
   m_Name: A_Button (8)
   m_TagString: Untagged
@@ -3946,19 +4427,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1181093266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: a
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1181093266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3997,6 +4466,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181093263}
   m_CullTransparentMesh: 1
+--- !u!114 &1181093268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181093263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1181093265}
+  buttonText: {fileID: 1920878183}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1199351053
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,6 +5024,142 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1338133300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338133301}
+  - component: {fileID: 1338133302}
+  - component: {fileID: 1338133303}
+  m_Layer: 5
+  m_Name: NPC_Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1338133301
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338133300}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 771972798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 380, y: -111}
+  m_SizeDelta: {x: 1.2, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1338133302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338133300}
+  m_CullTransparentMesh: 1
+--- !u!114 &1338133303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338133300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294177781
+  m_fontColor: {r: 0.9622642, g: 0.95318615, b: 0.95318615, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 0.9433962, g: 0.69007224, b: 0.050433062, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 2192
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.3
+  m_fontSizeBase: 0.3
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -1.7636169, y: 0, z: 0.15519896, w: -0.50972724}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1434394990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,7 +5380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 791194845}
+      - m_Target: {fileID: 791194847}
         m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
         m_MethodName: SubmitWord
         m_Mode: 1
@@ -5137,6 +5759,7 @@ GameObject:
   - component: {fileID: 1680285926}
   - component: {fileID: 1680285925}
   - component: {fileID: 1680285924}
+  - component: {fileID: 1680285927}
   m_Layer: 5
   m_Name: O_Button (11)
   m_TagString: Untagged
@@ -5207,19 +5830,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1680285925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: o
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1680285925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5258,6 +5869,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680285922}
   m_CullTransparentMesh: 1
+--- !u!114 &1680285927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680285922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1680285924}
+  buttonText: {fileID: 1567223479}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1686569262
 GameObject:
   m_ObjectHideFlags: 0
@@ -5354,6 +5982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1764852599}
+  - component: {fileID: 1764852600}
   m_Layer: 5
   m_Name: HintManager
   m_TagString: Untagged
@@ -5368,18 +5997,52 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764852598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 379569415}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 480.00003, y: 261.83334}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1764852600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764852598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eae602e07f9957419d09914db66aa77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  npcCanvas: {fileID: 771972801}
+  npcText: {fileID: 1338133303}
+  npcCharacter: {fileID: 142631857}
+  mistakesBeforeHint: 3
+  fadeSpeed: 5
+  messageDisplayDuration: 10
+  autoFadeAfterMessage: 1
+  introMessage: 'Welcome! The stars are beautiful tonight.
+
+    interact wtih the
+    window to start the puzzle.'
+  introDisplayTime: 5
+  hintMessageTemplate: Cats do have limited vocabulary, try thinking of a word starting
+    with '{0}'...
+  victoryMessage: 'Incredible! You solved it!
+
+    Head through the door to the next
+    puzzle room.'
+  encouragementMessage: You're doing great! Keep trying!
+  hintAppearSound: {fileID: 0}
+  victorySound: {fileID: 0}
 --- !u!1 &1775893141
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,6 +6679,7 @@ GameObject:
   - component: {fileID: 1863438784}
   - component: {fileID: 1863438783}
   - component: {fileID: 1863438782}
+  - component: {fileID: 1863438785}
   m_Layer: 5
   m_Name: T_Button (9)
   m_TagString: Untagged
@@ -6086,19 +6750,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1863438783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: t
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1863438783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,6 +6789,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863438780}
   m_CullTransparentMesh: 1
+--- !u!114 &1863438785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863438780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1863438782}
+  buttonText: {fileID: 854378293}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1920878181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6273,93 +6942,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920878181}
   m_CullTransparentMesh: 1
---- !u!1 &1930250915
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1930250917}
-  - component: {fileID: 1930250916}
-  m_Layer: 0
-  m_Name: laikaGhost
-  m_TagString: Ghost NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1930250916
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930250915}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1755924959
-  m_SortingLayer: -1
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 3342532279652475034, guid: e4952ddf59b918d44899821b37d846e0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 8.951015, y: 11.72}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1930250917
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930250915}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -448.87, y: -241.35666, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 379569415}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1931092222
 GameObject:
   m_ObjectHideFlags: 0
@@ -6372,6 +6954,7 @@ GameObject:
   - component: {fileID: 1931092226}
   - component: {fileID: 1931092225}
   - component: {fileID: 1931092224}
+  - component: {fileID: 1931092227}
   m_Layer: 5
   m_Name: L_Button (7)
   m_TagString: Untagged
@@ -6442,19 +7025,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1931092225}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: l
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1931092225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6493,6 +7064,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931092222}
   m_CullTransparentMesh: 1
+--- !u!114 &1931092227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931092222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1931092224}
+  buttonText: {fileID: 317169457}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1 &1935089046
 GameObject:
   m_ObjectHideFlags: 0
@@ -6728,6 +7316,7 @@ GameObject:
   - component: {fileID: 1977481783}
   - component: {fileID: 1977481782}
   - component: {fileID: 1977481781}
+  - component: {fileID: 1977481784}
   m_Layer: 5
   m_Name: N_Button (12)
   m_TagString: Untagged
@@ -6798,19 +7387,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1977481782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 791194845}
-        m_TargetAssemblyTypeName: WordGame, Assembly-CSharp
-        m_MethodName: AddLetter
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: n
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1977481782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6849,41 +7426,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977481779}
   m_CullTransparentMesh: 1
---- !u!1 &2094324915
-GameObject:
+--- !u!114 &1977481784
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2094324916}
-  m_Layer: 5
-  m_Name: NPCAnimator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2094324916
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094324915}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 379569415}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_GameObject: {fileID: 1977481779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f2c6abbc7dbb444a21441962f86d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1977481781}
+  buttonText: {fileID: 1837527414}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  pressedAlpha: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6899,6 +7458,7 @@ SceneRoots:
   - {fileID: 1686569264}
   - {fileID: 119457465}
   - {fileID: 592542108}
-  - {fileID: 1266686410}
   - {fileID: 379569415}
+  - {fileID: 1266686410}
   - {fileID: 791194846}
+  - {fileID: 1764852599}
