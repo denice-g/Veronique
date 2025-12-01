@@ -700,8 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f24630fd8ca474bb237f46bb093e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: Hallway_To_Cockpit_Left
-  targetSpawnPoint: Spawn_Down
+  targetSceneName: Control_Room
+  targetSpawnPoint: Spawn_Up
   loadDelay: 0.1
 --- !u!4 &812513384
 Transform:
@@ -712,7 +712,7 @@ Transform:
   m_GameObject: {fileID: 812513381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.83, y: -4.26, z: -0.026136225}
+  m_LocalPosition: {x: -6.67, y: 1.74, z: -0.026136225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -922,6 +922,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1115784923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115784924}
+  m_Layer: 0
+  m_Name: Spawn_Down
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115784924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115784923}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.31, y: -0.28, z: -0.037644308}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1267371951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1128,7 @@ Transform:
   m_GameObject: {fileID: 1267371951}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: -1.41, z: 0}
+  m_LocalPosition: {x: -6.18, y: 0.61, z: 0}
   m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1583,7 +1614,7 @@ Transform:
   m_GameObject: {fileID: 1769411242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32219553, y: 1.537355, z: -10}
+  m_LocalPosition: {x: -3.9280214, y: 1.536665, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2547,3 +2578,4 @@ SceneRoots:
   - {fileID: 849922344}
   - {fileID: 1950788664}
   - {fileID: 812513384}
+  - {fileID: 1115784924}

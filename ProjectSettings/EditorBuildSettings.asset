@@ -32,6 +32,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hallway_To_Cockpit_Left.unity
     guid: 43f09e2258cb2a34cacda7792b3d8d59
+  - enabled: 1
+    path: Assets/Scenes/Baywindow.unity
+    guid: d2b5b172db34ca44c94be4c66567d9fa
+  - enabled: 1
+    path: Assets/Scenes/NavPuzzle.unity
+    guid: 9474e4a62df55644e976d25b96e5bd15
+  - enabled: 1
+    path: Assets/Scenes/Storage_Puzzle.unity
+    guid: f4171cfbcabcc22429a4130d6536e3bf
+  - enabled: 1
+    path: Assets/Scenes/EngineRoom.unity
+    guid: 8809b8d53b7571c4aa2fd6595aa264c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
