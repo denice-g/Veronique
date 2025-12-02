@@ -51,11 +51,15 @@ public class NavDoor : MonoBehaviour
 
     void Update()
     {
-        if (!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected && GameManager.Instance.AreAllMainPuzzlesComplete())
+        if (!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected)
         {
-            OpenDoor();
 
             GameManager.Instance?.CompletePuzzle("WirePuzzle");
+
+            if (GameManager.Instance.AreAllMainPuzzlesComplete())
+            {
+                OpenDoor();
+            }
 
             // Show victory arrow (no animation, just appears)
             if (victoryArrow != null)
