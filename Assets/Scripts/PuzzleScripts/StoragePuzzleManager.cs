@@ -127,6 +127,8 @@ public class StoragePuzzleManager : MonoBehaviour
         {
             victoryArrow.ShowVictoryArrow();
         }
+
+        GameManager.Instance?.CompletePuzzle("StoragePuzzle");
     }
 
     private void HandleIncorrectPassword()

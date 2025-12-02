@@ -42,10 +42,27 @@ public class ComputerScreenUI : MonoBehaviour
 
         if (puzzleCompleteLightOff != null) puzzleCompleteLightOff.SetActive(true);
 
-        // ===== NEW: Auto-find puzzle manager =====
         if (puzzleManager == null)
         {
             puzzleManager = FindObjectOfType<StoragePuzzleManager>();
+        }
+
+        if (GameManager.Instance != null && 
+        GameManager.Instance.IsPuzzleComplete("StoragePuzzle"))
+        {
+            _puzzleCompleted = true;
+            
+            // Set completed visual state
+            if (puzzleCompleteLight != null) puzzleCompleteLight.SetActive(true);
+            if (puzzleCompleteScreen != null) puzzleCompleteScreen.SetActive(true);
+            if (puzzleCompleteScreenOff != null) puzzleCompleteScreenOff.SetActive(false);
+            if (puzzleCompleteLightOff != null) puzzleCompleteLightOff.SetActive(false);
+            if (SceneSwap != null) SceneSwap.SetActive(true);
+            
+            // Disable computer interaction
+            computerScreenUI.SetActive(false);
+            
+            Debug.Log("[StoragePuzzle] Already complete - systems online");
         }
     }
 

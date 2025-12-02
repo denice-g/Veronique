@@ -2,10 +2,6 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-/// <summary>
-/// NPC instructor for the lever sequence puzzle
-/// Shows intro instructions, provides hints after failures, and celebrates victory
-/// </summary>
 public class LeverNPCInstructor : MonoBehaviour
 {
     [Header("UI References")]
@@ -85,9 +81,6 @@ public class LeverNPCInstructor : MonoBehaviour
         return true;
     }
 
-    /// <summary>
-    /// Show intro instructions when puzzle starts
-    /// </summary>
     public void ShowIntroInstructions()
     {
         if (hasShownIntro) return;
@@ -98,9 +91,6 @@ public class LeverNPCInstructor : MonoBehaviour
         activeCoroutine = StartCoroutine(ShowMessage(introMessage));
     }
 
-    /// <summary>
-    /// Show hint after failed attempts
-    /// </summary>
     public void ShowHint(string firstLeverID)
     {
         if (hasShownHint) return; // Only show hint once
@@ -113,18 +103,12 @@ public class LeverNPCInstructor : MonoBehaviour
         activeCoroutine = StartCoroutine(ShowMessage(hintMessage, hintAppearSound));
     }
 
-    /// <summary>
-    /// Show victory message when puzzle is solved
-    /// </summary>
     public void ShowVictoryMessage()
     {
         if (activeCoroutine != null) StopCoroutine(activeCoroutine);
         activeCoroutine = StartCoroutine(ShowMessage(victoryMessage, victorySound, false)); // Don't auto-fade victory
     }
 
-    /// <summary>
-    /// Generic message display coroutine
-    /// </summary>
     private IEnumerator ShowMessage(string message, AudioClip sound = null, bool autoFade = true)
     {
         isTransitioning = true;
@@ -194,18 +178,12 @@ public class LeverNPCInstructor : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Manually fade out the NPC
-    /// </summary>
     public void FadeOutNow()
     {
         if (activeCoroutine != null) StopCoroutine(activeCoroutine);
         StartCoroutine(FadeOut());
     }
 
-    /// <summary>
-    /// Reset NPC state (for puzzle retry)
-    /// </summary>
     public void Reset()
     {
         StopAllCoroutines();

@@ -27,13 +27,35 @@ public class NavDoor : MonoBehaviour
         {
             victoryArrow = FindObjectOfType<VictoryArrow>();
         }
+
+        if (GameManager.Instance != null && 
+        GameManager.Instance.IsPuzzleComplete("WirePuzzle"))
+        {
+            doorOpened = true;
+            
+            // Set door to open state immediately
+            if (doorVisual != null)
+            {
+                doorVisual.transform.Translate(1, 0, 0);
+                doorVisual.transform.Rotate(0, 60, 0);
+            }
+            
+            // Mark all wireboxes as connected (visual state)
+            if (wireBox1 != null) wireBox1.isConnected = true;
+            if (wireBox2 != null) wireBox2.isConnected = true;
+            if (wireBox3 != null) wireBox3.isConnected = true;
+            
+            Debug.Log("[WirePuzzle] Already complete - door open");
+        }
     }
 
     void Update()
     {
-        if (!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected)
+        if (!doorOpened && wireBox1.isConnected && wireBox2.isConnected && wireBox3.isConnected && GameManager.Instance.AreAllMainPuzzlesComplete())
         {
             OpenDoor();
+
+            GameManager.Instance?.CompletePuzzle("WirePuzzle");
 
             // Show victory arrow (no animation, just appears)
             if (victoryArrow != null)

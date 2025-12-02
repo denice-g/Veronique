@@ -41,13 +41,13 @@ public class LeverSequenceManager : MonoBehaviour
 
     void Start()
     {
-        // NEW: Auto-find NPC instructor if not assigned
+        //  Auto-find NPC instructor if not assigned
         if (npcInstructor == null)
         {
             npcInstructor = FindObjectOfType<LeverNPCInstructor>();
         }
 
-        // NEW: Show intro instructions
+        //  Show intro instructions
         if (npcInstructor != null)
         {
             npcInstructor.ShowIntroInstructions();
@@ -57,6 +57,32 @@ public class LeverSequenceManager : MonoBehaviour
         if (victoryArrow == null)
         {
             victoryArrow = FindObjectOfType<VictoryArrow>();
+        }
+
+        if (GameManager.Instance != null && 
+        GameManager.Instance.IsPuzzleComplete("LeverPuzzle"))
+        {
+            solved = true;
+            
+            // Keep lights on (already solved state)
+            if (darknessOverlay != null)
+            {
+                Color c = darknessOverlay.color;
+                c.a = overlayTargetAlpha; // Full brightness
+                darknessOverlay.color = c;
+            }
+            
+            // Disable all levers (can't interact anymore)
+            foreach (var lever in levers)
+            {
+                if (lever != null)
+                {
+                    lever.gameObject.SetActive(false); // Or disable collider
+                }
+            }
+            
+            Debug.Log("[LeverPuzzle] Already complete - lights on, levers disabled");
+            return;
         }
     }
 
@@ -131,6 +157,8 @@ public class LeverSequenceManager : MonoBehaviour
             // Puzzle solved!
             solved = true;
             if (solvedJingle && sfx) sfx.PlayOneShot(solvedJingle);
+
+            GameManager.Instance?.CompletePuzzle("LeverPuzzle");
             
             // NEW: Notify NPC of success
             if (npcInstructor != null)

@@ -52,6 +52,20 @@ public class WordGame : MonoBehaviour
             letterButtons = FindObjectsOfType<LetterButton>();
         }
 
+        // Check if puzzle already complete
+        if (GameManager.Instance != null && 
+            GameManager.Instance.IsPuzzleComplete("WordPuzzle"))
+        {
+            // Puzzle already solved - disable puzzle panel
+            if (puzzlePanel != null)
+            {
+                puzzlePanel.SetActive(false);
+            }
+            
+            Debug.Log("[WordGame] Puzzle already complete - panel disabled");
+            return; // Don't initialize puzzle
+        }
+
         // Initialize UI
         UpdateWordsFoundUI();
         ClearWord();
@@ -132,6 +146,7 @@ public class WordGame : MonoBehaviour
         if (wordsFound >= wordsNeededToWin)
         {
             WinPuzzle();
+            GameManager.Instance?.CompletePuzzle("WordPuzzle");
         }
     }
 
