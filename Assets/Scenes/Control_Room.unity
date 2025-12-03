@@ -208,7 +208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -29}
+  m_AnchoredPosition: {x: -142, y: -114}
   m_SizeDelta: {x: 1.2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &54452240
@@ -266,8 +266,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.5
+  m_fontSizeBase: 0.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.7636169, y: 0, z: 0.15519896, w: -0.50972724}
+  m_margin: {x: -3.968096, y: -1.0739788, z: 0.15519896, w: -0.50972724}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3072,10 +3072,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4655,8 +4655,8 @@ MonoBehaviour:
   introMessage: Looks like you knocked the power out. There should be some levers
     over there where you can reset the power. You need to pull them in a certain
     order though...
-  hintMessageTemplate: Having trouble? Woof! Try starting with lever {0} - it should
-    be pulled first.
+  hintMessageTemplate: Having trouble? Woof! The engineers use to say yellow giant
+    orb with bright rays. Whatever that means...
   victoryMessage: The lights are back on! But there are still many rooms to fix...
   hintAppearSound: {fileID: 0}
   victorySound: {fileID: 0}
@@ -5594,8 +5594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232, y: -124}
-  m_SizeDelta: {x: 77.0028, y: 73.3344}
+  m_AnchoredPosition: {x: -477, y: -251}
+  m_SizeDelta: {x: 192.879, y: 169.427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1648808262
 GameObject:
@@ -5972,8 +5972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 348, y: -3}
-  m_SizeDelta: {x: 80.6993, y: 72.5726}
+  m_AnchoredPosition: {x: 830, y: -40}
+  m_SizeDelta: {x: 162.661, y: 151.708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1896268669
 MonoBehaviour:
