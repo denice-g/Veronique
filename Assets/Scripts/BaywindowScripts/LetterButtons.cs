@@ -2,11 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-/// <summary>
-/// Attach this to each letter button
-/// Prevents multiple presses per word and provides visual feedback
-/// Resets when word is submitted or cleared
-/// </summary>
 public class LetterButton : MonoBehaviour
 {
     [Header("References")]
@@ -86,11 +81,7 @@ public class LetterButton : MonoBehaviour
             buttonText.color = textColor;
         }
     }
-    
-    /// <summary>
-    /// Call this to reset the button for a new word
-    /// Called automatically by WordGame on Submit/Clear
-    /// </summary>
+  
     public void ResetButton()
     {
 
@@ -111,18 +102,12 @@ public class LetterButton : MonoBehaviour
             buttonText.color = textColor;
         }
     }
-    
-    /// <summary>
-    /// Get the letter this button represents
-    /// </summary>
+
     public string GetLetter()
     {
         return letter;
     }
-    
-    /// <summary>
-    /// Check if button is currently pressed
-    /// </summary>
+
     public bool IsPressed()
     {
         return isPressed;

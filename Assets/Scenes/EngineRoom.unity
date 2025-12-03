@@ -1306,6 +1306,7 @@ GameObject:
   - component: {fileID: 203946407}
   - component: {fileID: 203946406}
   - component: {fileID: 203946405}
+  - component: {fileID: 203946408}
   m_Layer: 6
   m_Name: Puzzle1Console
   m_TagString: Untagged
@@ -1343,7 +1344,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1457,6 +1458,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203946408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203946404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e79da1dc4156e94ab69032406798c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 0}
+  inPuzzle1: 0
 --- !u!1 &204370769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,7 +5555,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.32193002, y: 0.057091653}
+  m_Offset: {x: -0.7197856, y: -1.0701681}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5550,7 +5565,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.492729, y: 1.174256}
+  m_Size: {x: 2.2884402, y: 3.4287755}
   m_EdgeRadius: 0
 --- !u!212 &1226038844
 SpriteRenderer:
@@ -7495,7 +7510,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.32193002, y: 0.057091653}
+  m_Offset: {x: -0.725088, y: -1.0993448}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7505,7 +7520,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.492729, y: 1.174256}
+  m_Size: {x: 2.2990444, y: 3.487129}
   m_EdgeRadius: 0
 --- !u!114 &1372919827
 MonoBehaviour:
@@ -9357,6 +9372,7 @@ GameObject:
   - component: {fileID: 2012358825}
   - component: {fileID: 2012358824}
   - component: {fileID: 2012358823}
+  - component: {fileID: 2012358826}
   m_Layer: 6
   m_Name: Puzzle2Console
   m_TagString: Untagged
@@ -9394,7 +9410,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9508,6 +9524,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2012358826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012358822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380f72feccf98624ca4f50dcc6a4aba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2012614456
 GameObject:
   m_ObjectHideFlags: 0

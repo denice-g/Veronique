@@ -1,10 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Manages the victory arrow that appears when player wins
-/// Simple version - just shows/hides without animations
-/// </summary>
 public class VictoryArrow : MonoBehaviour
 {
     [Header("Arrow Settings")]
@@ -44,11 +40,7 @@ public class VictoryArrow : MonoBehaviour
             arrowObject.SetActive(false);
         }
     }
-    
-    /// <summary>
-    /// Call this when player wins to show the arrow
-    /// Arrow simply appears without any animation
-    /// </summary>
+
     public void ShowVictoryArrow()
     {
         if (arrowObject != null)
@@ -57,10 +49,7 @@ public class VictoryArrow : MonoBehaviour
             Debug.Log("[VictoryArrow] Arrow shown");
         }
     }
-    
-    /// <summary>
-    /// Hide the arrow
-    /// </summary>
+
     public void HideVictoryArrow()
     {
         if (arrowObject != null)

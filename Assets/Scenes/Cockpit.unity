@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 389158184}
   - component: {fileID: 389158183}
   - component: {fileID: 389158182}
+  - component: {fileID: 389158185}
   m_Layer: 6
   m_Name: Console
   m_TagString: Untagged
@@ -1102,7 +1103,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1216,6 +1217,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389158185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389158181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ea98c5fb1b3974dab4a8df048347db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  oneShot: 1
+  interactPrompt: {fileID: 0}
+  roomNPC: {fileID: 0}
 --- !u!1 &452978827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,9 +3224,14 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.114999995, y: 0.255}
       - {x: -0.24499999, y: 0.085}
-      - {x: -0.24499999, y: 0.024999999}
-      - {x: 0.005, y: -0.255}
-      - {x: 0.065, y: -0.255}
+      - {x: -0.0057510436, y: -0.24072365}
+      - {x: -0.2354654, y: -0.5156319}
+      - {x: -1.43905, y: -0.55281985}
+      - {x: -1.7414528, y: -0.76463395}
+      - {x: -1.8421445, y: -1.1781815}
+      - {x: -1.5389048, y: -1.9053806}
+      - {x: -1.1275339, y: -2.842372}
+      - {x: 0.19995365, y: -0.14648175}
       - {x: 0.24499999, y: -0.055}
       - {x: 0.24499999, y: 0.055}
       - {x: 0.005, y: 0.255}
@@ -3278,7 +3300,7 @@ Transform:
   m_GameObject: {fileID: 2143062903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -8.316, y: 0.744, z: 0}
+  m_LocalPosition: {x: -8.303, y: 0.725, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []

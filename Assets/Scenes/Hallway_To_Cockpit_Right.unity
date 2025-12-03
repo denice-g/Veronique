@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f24630fd8ca474bb237f46bb093e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: Bedroom
+  targetSceneName: Storage_Puzzle
   targetSpawnPoint: Spawn_Right
   loadDelay: 0.1
 --- !u!61 &1147088063
@@ -2097,8 +2097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8a5941b8e83ff459debcc5318b705a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0.2, y: 0}
-  loopSizeOverride: {x: 0, y: 0}
 --- !u!483693784 &2005377714
 TilemapRenderer:
   m_ObjectHideFlags: 0

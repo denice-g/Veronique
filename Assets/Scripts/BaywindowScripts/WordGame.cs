@@ -71,19 +71,12 @@ public class WordGame : MonoBehaviour
         ClearWord();
     }
     
-    /// <summary>
-    /// Add a letter to the current word
-    /// </summary>
     public void AddLetter(string letter)
     {
         currentWord += letter;
         currentWordText.text = currentWord.ToUpper();
     }
 
-    /// <summary>
-    /// Submit the current word for validation
-    /// Resets letter buttons so they can be used again for the next word
-    /// </summary>
     public void SubmitWord()
     {
         // Validate input
@@ -200,10 +193,6 @@ public class WordGame : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Clear the current word input and reset letter buttons
-    /// Allows player to reuse the same letters for a new word
-    /// </summary>
     public void ClearWord()
     {
         currentWord = "";
@@ -216,10 +205,6 @@ public class WordGame : MonoBehaviour
         ResetLetterButtons();
     }
 
-    /// <summary>
-    /// Reset all letter buttons to unpressed state
-    /// This allows letters to be reused for the next word
-    /// </summary>
     public void ResetLetterButtons()
     {
         if (letterButtons != null)
@@ -243,9 +228,6 @@ public class WordGame : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Get hint for an unguessed word (first letter)
-    /// </summary>
     public string GetUnguessedWordHint()
     {
         foreach (string word in validWords)
@@ -259,9 +241,6 @@ public class WordGame : MonoBehaviour
         return "?";
     }
 
-    /// <summary>
-    /// Get random unguessed word hint
-    /// </summary>
     public string GetRandomUnguessedWordHint()
     {
         List<string> unguessed = new List<string>();
@@ -282,9 +261,6 @@ public class WordGame : MonoBehaviour
         return "?";
     }
 
-    /// <summary>
-    /// Reset puzzle to initial state
-    /// </summary>
     public void ResetPuzzle()
     {
         currentWord = "";
