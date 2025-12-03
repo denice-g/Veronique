@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip death;
     public AudioClip meow;
 
-    private static AudioManager instance;
+    public static AudioManager instance;
 
     private bool hasPlayedBedroomMusic = false;
 
