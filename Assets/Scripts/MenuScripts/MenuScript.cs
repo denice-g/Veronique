@@ -1,7 +1,9 @@
-using UnityEngine;
+using System.Collections;
 using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MenuScript : MonoBehaviour
 {
@@ -16,17 +18,20 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject confirmMenuUI;
     [SerializeField] private GameObject timerUI;
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject gameEndUI;
+    [SerializeField] private VideoPlayer startVideo;
 
     [Header("---------- Buttons ----------")]
     [SerializeField] private GameObject confirmQuitButton;
     [SerializeField] private GameObject confirmExitButton;
 
-    private float crisisDuration = 60f;
+    private float crisisDuration = 10f;
     public float TimeLeft;
 
     [Header("---------- Triggers ----------")]
     public bool InCrisis = false;
-    public bool isGameOver = false;
+    public bool IsGameOver = false;
+    public bool IsGameFinished = false;
 
     [Header("---------- Text ----------")]
     [SerializeField] private TextMeshProUGUI timerLabel;
@@ -52,7 +57,7 @@ public class MenuScript : MonoBehaviour
 
         // Initialize currentScene in case this object starts in a scene
         currentScene = SceneManager.GetActiveScene().name;
-        CheckScene();
+        StartCoroutine(CheckScene());
     }
 
     private void OnDestroy()
@@ -63,10 +68,10 @@ public class MenuScript : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         currentScene = scene.name;
-        CheckScene();
+        StartCoroutine(CheckScene());
     }
 
-    private void CheckScene()
+    private IEnumerator CheckScene()
     {
         if (currentScene == "MainMenu")
         {
@@ -77,9 +82,35 @@ public class MenuScript : MonoBehaviour
             confirmMenuUI.SetActive(false);
             confirmQuitButton.SetActive(false);
             confirmExitButton.SetActive(false);
+            timerUI.SetActive(false);
+            gameEndUI.SetActive(false);
 
             GameisPaused = false;
             Time.timeScale = 1f; // Ensure time is running
+        }
+
+        //Activate if player finishes game
+        if (currentScene == "End_Screen")
+        {
+            // Close all menus
+            mainMenuUI.SetActive(false);
+            pauseMenuUI.SetActive(false);
+            optionsMenuUI.SetActive(false);
+            audioMenuUI.SetActive(false);
+            confirmMenuUI.SetActive(false);
+            confirmQuitButton.SetActive(false);
+            confirmExitButton.SetActive(false);
+            timerUI.SetActive(false);
+
+            InCrisis = false;
+
+            //Delay the UI activation for a couple seconds
+            yield return new WaitForSeconds(3);
+            gameEndUI.SetActive(true);
+            IsGameFinished = true;
+
+            GameisPaused = false;
+            Time.timeScale = 0f;
         }
     }
 
@@ -91,14 +122,14 @@ public class MenuScript : MonoBehaviour
             if (GameisPaused)
             {
                 //Makes it unable to pause when game over
-                if (isGameOver) return;
+                if (IsGameOver) return;
 
                 Resume();
             }
             else
             {
                 //Makes it unable to resume when game over
-                if (isGameOver) return;
+                if (IsGameOver) return;
 
                 Pause();
             }
@@ -112,7 +143,7 @@ public class MenuScript : MonoBehaviour
 
         if (TimeLeft <= 0f)
         {
-            if (isGameOver) return;
+            if (IsGameOver) return;
             TimeLeft = 0f;
             GameOver();
         }
@@ -121,8 +152,39 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         IsMainMenu = false;
+        IsGameFinished = false;
         mainMenuUI.SetActive(false);
+
+        StartCoroutine(PlayIntroAndLoadScene());
+        //SceneManager.LoadScene("Bedroom");
+    }
+
+    //Plays start game video then changes to bedroom scene
+    private IEnumerator PlayIntroAndLoadScene()
+    {
+        // Show video panel
+        startVideo.gameObject.SetActive(true);
+
+        // Prepare video
+        startVideo.Prepare();
+        while (!startVideo.isPrepared)
+            yield return null;
+
+        // Play video
+        startVideo.Play();
+
+        // Wait for video to finish
+        while (startVideo.isPlaying)
+            yield return null;
+
+        // Load scene while video is still visible
         SceneManager.LoadScene("Bedroom");
+
+        // Wait one frame for scene to fully load
+        yield return null;
+
+        // NOW hide the video instantly
+        startVideo.gameObject.SetActive(false);
     }
 
     public void Resume()
@@ -230,7 +292,7 @@ public class MenuScript : MonoBehaviour
         Time.timeScale = 1f;
         GameisPaused = false;
         InCrisis = false;
-        isGameOver = false;
+        IsGameOver = false;
         
         //Reset timer
         TimeLeft = crisisDuration;
@@ -256,7 +318,7 @@ public class MenuScript : MonoBehaviour
     public void No()
     {
 
-        if (isGameOver)
+        if (IsGameOver)
         {
             confirmMenuUI.SetActive(false);
             gameOverUI.SetActive(true);
@@ -265,6 +327,11 @@ public class MenuScript : MonoBehaviour
         {
             confirmMenuUI.SetActive(false);
             mainMenuUI.SetActive(true);
+        }
+        else if(IsGameFinished)
+        {
+            confirmMenuUI.SetActive(false);
+            gameEndUI.SetActive(true);
         }
         else
         {
@@ -282,6 +349,7 @@ public class MenuScript : MonoBehaviour
         CanvasGroup group = timerUI.GetComponent<CanvasGroup>();
         group.interactable = false;
         group.blocksRaycasts = false;
+        AudioManager.instance.PlayMusic(AudioManager.instance.gameStartMusic);
 
         if (InCrisis) return; // already running
         InCrisis = true;
@@ -301,9 +369,10 @@ public class MenuScript : MonoBehaviour
     
     private void GameOver()
     {
-        isGameOver = true;
+        IsGameOver = true;
         InCrisis = false;
         Time.timeScale = 0f;
+        GameisPaused = true;
         gameOverUI.SetActive(true);
     }
 }
