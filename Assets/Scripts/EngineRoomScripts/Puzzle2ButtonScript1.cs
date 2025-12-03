@@ -1,15 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puzzle2ButtonScript : MonoBehaviour
 {
-    public GameObject panelToOpen; // Assign Panel1
     private bool playerInRange;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    /*void Start()
     {
         
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -17,6 +17,7 @@ public class Puzzle2ButtonScript : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             //PuzzlesScript.Instance.OpenPuzzle2();
+            SceneManager.LoadScene("End_Screen");
         }
     }
 
