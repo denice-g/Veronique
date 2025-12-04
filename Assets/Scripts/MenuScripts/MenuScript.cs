@@ -20,6 +20,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject gameEndUI;
     [SerializeField] private VideoPlayer startVideo;
+    [SerializeField] private VideoPlayer endVideo;
 
     [Header("---------- Buttons ----------")]
     [SerializeField] private GameObject confirmQuitButton;
@@ -104,8 +105,11 @@ public class MenuScript : MonoBehaviour
 
             InCrisis = false;
 
+            StartCoroutine(PlayEnd());
+
             //Delay the UI activation for a couple seconds
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(13);
+            endVideo.gameObject.SetActive(false);
             gameEndUI.SetActive(true);
             IsGameFinished = true;
 
@@ -155,36 +159,61 @@ public class MenuScript : MonoBehaviour
         IsGameFinished = false;
         mainMenuUI.SetActive(false);
 
-        StartCoroutine(PlayIntroAndLoadScene());
+        StartCoroutine(PlayIntro());
         //SceneManager.LoadScene("Bedroom");
     }
 
     //Plays start game video then changes to bedroom scene
-    private IEnumerator PlayIntroAndLoadScene()
+    private IEnumerator PlayIntro()
     {
-        // Show video panel
+        //Show video panel
         startVideo.gameObject.SetActive(true);
 
-        // Prepare video
+        //Prepare video
         startVideo.Prepare();
         while (!startVideo.isPrepared)
             yield return null;
 
-        // Play video
+        //Play video
         startVideo.Play();
 
-        // Wait for video to finish
+        //Wait for video to finish
         while (startVideo.isPlaying)
             yield return null;
 
-        // Load scene while video is still visible
+        //Load scene while video is still visible
         SceneManager.LoadScene("Bedroom");
 
-        // Wait one frame for scene to fully load
+        //Wait one frame for scene to fully load
         yield return null;
 
-        // NOW hide the video instantly
+        //Hide the video instantly
         startVideo.gameObject.SetActive(false);
+    }
+
+    //Plays end game video
+    private IEnumerator PlayEnd()
+    {
+        //Show video panel
+        endVideo.gameObject.SetActive(true);
+
+        //Prepare video
+        endVideo.Prepare();
+        while (!endVideo.isPrepared)
+            yield return null;
+
+        //Play video
+        endVideo.Play();
+
+        //Wait for video to finish
+        while (endVideo.isPlaying)
+            yield return null;
+
+        //Wait one frame for scene to fully load
+        yield return null;
+
+        //Hide the video instantly
+        //endVideo.gameObject.SetActive(false);
     }
 
     public void Resume()
@@ -299,6 +328,7 @@ public class MenuScript : MonoBehaviour
         GameisPaused = false;
         InCrisis = false;
         IsGameOver = false;
+        IsGameFinished = false;
         
         //Reset timer
         TimeLeft = crisisDuration;

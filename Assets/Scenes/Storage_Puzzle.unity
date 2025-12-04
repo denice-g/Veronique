@@ -2456,9 +2456,9 @@ Canvas:
   m_GameObject: {fileID: 301549364}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1575399119}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3549,6 +3549,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 0}
   gameEndUI: {fileID: 0}
   startVideo: {fileID: 0}
+  endVideo: {fileID: 0}
   confirmQuitButton: {fileID: 1507187213}
   confirmExitButton: {fileID: 1850703965}
   TimeLeft: 0

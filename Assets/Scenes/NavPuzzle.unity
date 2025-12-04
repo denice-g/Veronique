@@ -593,6 +593,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 0}
   gameEndUI: {fileID: 0}
   startVideo: {fileID: 0}
+  endVideo: {fileID: 0}
   confirmQuitButton: {fileID: 128951568}
   confirmExitButton: {fileID: 437232161}
   TimeLeft: 0
@@ -2956,9 +2957,9 @@ Canvas:
   m_GameObject: {fileID: 441411101}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 352812456}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
