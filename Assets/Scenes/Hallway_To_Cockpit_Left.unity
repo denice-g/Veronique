@@ -427,7 +427,7 @@ MonoBehaviour:
   autoFadeAfterMessage: 1
   entrySound: {fileID: 0}
   interactionSound: {fileID: 0}
-  roomID: CrisisRoom
+  roomID: Hallway
   victoryArrow: {fileID: 2078230218}
 --- !u!1001 &428958896
 PrefabInstance:

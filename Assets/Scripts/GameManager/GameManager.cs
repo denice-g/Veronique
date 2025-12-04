@@ -84,6 +84,10 @@ public class GameManager : MonoBehaviour
     private const float COMPACT_WIDTH = 120f;
     private const float COMPACT_HEIGHT = 40f;
 
+    [Header("Scene Settings")]
+    [Tooltip("Scenes where debug UI should be hidden")]
+    public string[] hideUIInScenes = { "MainMenu", "End_Screen", "Credits" };
+
     void Awake()
     {
         // Singleton pattern
@@ -121,6 +125,19 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
+        // Check if we're in a scene where UI should be hidden
+        string currentScene = SceneManager.GetActiveScene().name;
+        bool shouldHideInThisScene = System.Array.Exists(hideUIInScenes, scene => scene == currentScene);
+        
+        if (shouldHideInThisScene)
+        {
+            showDebugInfo = false;
+        }
+        else
+        {
+            showDebugInfo = true;
+        }
+
         // Cycle through UI modes with F1
         if (Input.GetKeyDown(toggleUIKey))
         {
@@ -495,5 +512,23 @@ public class GameManager : MonoBehaviour
         {
             CycleUIMode();
         }
+    }
+
+    public void ResetGame()
+    {
+        Debug.Log("[GameManager] Resetting entire game...");
+        
+        // Reset puzzle progress
+        ResetAllProgress();
+        
+        // Reset all room visits
+        PlayerPrefs.DeleteKey("RoomVisited_Bedroom");
+        PlayerPrefs.DeleteKey("RoomVisited_Cockpit");
+        PlayerPrefs.DeleteKey("RoomVisited_Hallway");
+        
+        PlayerPrefs.Save();
+        
+        // Reload scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

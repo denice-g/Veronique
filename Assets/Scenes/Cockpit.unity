@@ -1274,7 +1274,7 @@ MonoBehaviour:
   autoFadeAfterMessage: 1
   entrySound: {fileID: 0}
   interactionSound: {fileID: 0}
-  roomID: CrisisRoom
+  roomID: Cockpit
   victoryArrow: {fileID: 0}
 --- !u!4 &452978829
 Transform:

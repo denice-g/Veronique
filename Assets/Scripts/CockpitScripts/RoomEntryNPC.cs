@@ -33,8 +33,8 @@ public class RoomEntryNPC : MonoBehaviour
     private AudioSource audioSource;
 
     [Header("Room Tracking")]
-    [Tooltip("Unique identifier for this room (e.g., 'CrisisRoom', 'CockpitLeft')")]
-    public string roomID = "CrisisRoom";
+    [Tooltip("Unique identifier for this room (e.g., 'Cockpit', 'CockpitLeft')")]
+    public string roomID = "Cockpit";
 
     // Internal state
     private bool hasEnteredRoom = false;
