@@ -288,6 +288,12 @@ public class MenuScript : MonoBehaviour
         confirmQuitButton.SetActive(false);
         confirmExitButton.SetActive(false);
 
+        //reset game manager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ResetGame();
+        }
+
         //Unpause and set game events false
         Time.timeScale = 1f;
         GameisPaused = false;

@@ -1037,7 +1037,7 @@ MonoBehaviour:
   autoFadeAfterMessage: 1
   entrySound: {fileID: 0}
   interactionSound: {fileID: 0}
-  roomID: BedroomRoom
+  roomID: Bedroom
   victoryArrow: {fileID: 1633044486}
 --- !u!4 &476649805
 Transform:
